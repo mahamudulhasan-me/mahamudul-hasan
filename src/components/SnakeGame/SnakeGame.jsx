@@ -1,6 +1,7 @@
 "use client";
 /* eslint-disable react-hooks/exhaustive-deps */
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { GiSnake } from "react-icons/gi";
 import { RiCloseCircleFill } from "react-icons/ri";
@@ -13,6 +14,7 @@ const SnakeGame = () => {
   const [isGameOver, setIsGameOver] = useState(false);
   const [eatenApples, setEatenApples] = useState(10);
   const [wellDone, setWellDone] = useState(false);
+  const router = useRouter();
 
   const playAudio = () => {
     const audio = new Audio("./audio/wellDone.wav");
@@ -22,6 +24,7 @@ const SnakeGame = () => {
     if (eatenApples === 0) {
       playAudio();
       setPlayGame(!playGame);
+      router.push("/about");
       setWellDone(true);
     }
   }, [eatenApples]);
@@ -36,9 +39,9 @@ const SnakeGame = () => {
   const repeatedSnakeFood = Array(eatenApples).fill(snakeFood);
   return (
     <>
-      <div className="z-50 relative  h-full lg:flex hidden justify-start items-center">
+      <div className="z-50 relative  h-full lg:flex hidden justify-start items-center pt-0.5">
         <div
-          className="z-50 rounded-lg border-2 border-[#010e0e] px-8 py-7 flex justify-center items-center gap-2"
+          className="z-50 rounded-lg border border-[#010e0e] px-8 py-7 flex justify-center items-center gap-2"
           style={{
             width: "500px",
             height: "475px",
@@ -111,17 +114,7 @@ const SnakeGame = () => {
           </div>
           {/* arrow key button  */}
           <div className="w-2/5 h-full rounded-lg">
-            <div
-              style={{ background: "rgba(1, 20, 35, 0.19)" }}
-              className="p-2 rounded-lg"
-            >
-              <p className="text-white">
-                {`//use keyboard`} <br /> {`//arrow to play`}
-              </p>
-              <div className="mt-5">
-                <ArrowKeyButtons />
-              </div>
-            </div>
+            <ArrowKeyButtons />
             {/* snake food section  */}
             <div className="mt-8 p-2">
               <p className="text-white">{`//food left`}</p>
@@ -139,7 +132,7 @@ const SnakeGame = () => {
               skip
             </Link>
           </div>
-          <span className="absolute top-2 left-2 border border-red border-[#114944] text-[#052130] rounded-full">
+          <span className="absolute top-2 left-2 border border-red border-[#114944] text-[#052130] rounded-full shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]">
             <RiCloseCircleFill />
           </span>
           <span className="absolute top-2 right-2 border border-red border-[#114944] text-[#052130] rounded-full">

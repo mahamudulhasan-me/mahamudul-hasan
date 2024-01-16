@@ -67,18 +67,30 @@ function ArrowKeyButtons() {
   return (
     // <div>
     <>
-      <div className={`${upActive ? "arrow-btn border" : "arrow-btn"}`}>
-        <RiArrowUpSFill />
-      </div>
-      <div className="flex justify-evenly items-center mt-1">
-        <div className={`${leftActive ? "arrow-btn border" : "arrow-btn"}`}>
-          <RiArrowLeftSFill />
-        </div>
-        <div className={`${downActive ? "arrow-btn border" : "arrow-btn"}`}>
-          <RiArrowDownSFill />
-        </div>
-        <div className={`${rightActive ? "arrow-btn border" : "arrow-btn"}`}>
-          <RiArrowRightSFill />
+      <div
+        style={{ background: "rgba(1, 20, 35, 0.19)" }}
+        className="p-2 rounded-lg"
+      >
+        <p className="text-white">
+          {`//use keyboard`} <br /> {`//arrow to play`}
+        </p>
+        <div className="mt-5">
+          <div className={`${upActive ? "arrow-btn border" : "arrow-btn"}`}>
+            <RiArrowUpSFill />
+          </div>
+          <div className="flex justify-evenly items-center mt-1">
+            <div className={`${leftActive ? "arrow-btn border" : "arrow-btn"}`}>
+              <RiArrowLeftSFill />
+            </div>
+            <div className={`${downActive ? "arrow-btn border" : "arrow-btn"}`}>
+              <RiArrowDownSFill />
+            </div>
+            <div
+              className={`${rightActive ? "arrow-btn border" : "arrow-btn"}`}
+            >
+              <RiArrowRightSFill />
+            </div>
+          </div>
         </div>
       </div>
     </>
