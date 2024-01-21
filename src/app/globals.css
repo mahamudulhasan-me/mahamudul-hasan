@@ -76,6 +76,7 @@ body {
 .content-container {
   overflow-y: scroll;
   scrollbar-width: thin;
+  /* padding: 1px; */
   scrollbar-color: transparent transparent;
 }
 
