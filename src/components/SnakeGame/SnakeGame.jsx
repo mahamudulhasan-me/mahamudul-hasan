@@ -24,7 +24,7 @@ const SnakeGame = () => {
     if (eatenApples === 0) {
       playAudio();
       setPlayGame(!playGame);
-      router.push("/about");
+      router.push("/about/professional-info");
       setWellDone(true);
     }
   }, [eatenApples]);
