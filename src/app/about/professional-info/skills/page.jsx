@@ -1,5 +1,11 @@
+import SectionHead from "@/components/SectionHead/SectionHead";
+
 const SkillsPage = () => {
-  return <div>this is skills page</div>;
+  return (
+    <div>
+      <SectionHead>professional-skill</SectionHead>
+    </div>
+  );
 };
 
 export default SkillsPage;

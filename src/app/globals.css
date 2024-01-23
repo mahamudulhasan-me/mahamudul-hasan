@@ -145,8 +145,8 @@ Loader Style Start
 }
 
 .terminal-loader {
-  border: 0.1em solid #333;
-  background-color: #1a1a1a;
+  border: 0.1em solid #4d5bce;
+  background-color: #011627;
   color: #0f0;
   font-family: "Courier New", Courier, monospace;
   font-size: 1em;
@@ -166,7 +166,7 @@ Loader Style Start
   left: 0;
   right: 0;
   height: 1.5em;
-  background-color: #333;
+  background-color: #4d5bce;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   padding: 0 0.4em;
