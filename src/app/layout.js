@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={firaCode.className}>
-        <div className="min-h-screen w-full p-1 content-container rounded-md z-auto  container mx-auto border-x border-p4">
+        <div className="min-h-screen h-fit w-full content-container  z-auto  container mx-auto border-x border-p4">
           <div className="-z-30  animate-content animate-rotate"></div>
 
           {/* <div className="min-h-screen w-full border-x border-p4"> */}

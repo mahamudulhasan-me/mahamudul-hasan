@@ -4,7 +4,7 @@ import SendMail from "./SendMail";
 
 const ContactsNav = () => {
   return (
-    <CollapseMenu pl={false} collapse={false}>
+    <CollapseMenu bt={true} pl={false} collapse={false}>
       <div className={`px-3  md:pb-0 pb-2 space-y-4 text-s1`}>
         <p className="flex items-center gap-2 ">
           <RiMailFill size={20} />
