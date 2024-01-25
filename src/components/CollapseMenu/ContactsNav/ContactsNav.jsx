@@ -2,9 +2,9 @@ import { RiMailFill, RiPhoneFill } from "react-icons/ri";
 import CollapseMenu from "../CollapseMenu";
 import SendMail from "./SendMail";
 
-const ContactsNav = () => {
+const ContactsNav = ({bt}) => {
   return (
-    <CollapseMenu bt={true} pl={false} collapse={false} name="contacts">
+    <CollapseMenu bt={bt} pl={false} collapse={false} name="contacts">
       <div className={`px-3  md:pb-0 pb-2 space-y-4 text-s1`}>
         <p className="flex items-center gap-2 ">
           <RiMailFill size={20} />

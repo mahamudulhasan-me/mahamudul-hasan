@@ -4,7 +4,7 @@ import { HiTerminal } from "react-icons/hi";
 import { RiGamepadFill, RiInformationFill } from "react-icons/ri";
 const AboutLayout = ({ children }) => {
   return (
-    <section className="flex h-[calc(100vh-100px)]   mt-[3.5rem]">
+    <section className="flex h-full ">
       <div className="w-[58%]  border-r border-p4 h-full flex">
         <div className="w-[5.3%] border-r border-p4 h-full pt-5  text-2xl flex flex-col  gap-5 items-center text-s1 ">
           <AboutActiveLink href="/about/professional-info">
@@ -22,8 +22,8 @@ const AboutLayout = ({ children }) => {
 
       <div className="w-[42%] h-full">
         <div className={`border-b border-p4 w-full h-10`}></div>
-        <div className="w-full h-full md:pr-6 md:px-0 px-2 ">
-          <div className="w-full h-full   md:px-5 mb-10 py-3 md:border-r border-p4">
+        <div className="w-full h-full md:pr-6 md:px-0 px-2">
+          <div className="w-full h-full md:px-5 mb-10 py-3 md:border-r border-p4">
             <span className="text-s1 md:text-2xl text-xl">
               {`// Code snippet showcase:`}
             </span>

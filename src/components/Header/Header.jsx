@@ -1,4 +1,3 @@
-import Link from "next/link";
 import ActiveLink from "../ActiveLink/ActiveLink";
 import ActiveLink2 from "../ActiveLink/ActiveLink2";
 const navItems = [
@@ -31,7 +30,7 @@ const Header = () => {
 
           <ul className="h-full">
             <li className="w-[153px] border-l border-p4 h-full flex justify-center items-center hover:text-white transition-all">
-              <Link href={"/projects"}>_contact-me</Link>
+              <ActiveLink href={"/contact"}>_contact-me</ActiveLink>
             </li>
           </ul>
         </nav>

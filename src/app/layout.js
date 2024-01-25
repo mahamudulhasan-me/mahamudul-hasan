@@ -19,7 +19,9 @@ export default function RootLayout({ children }) {
 
           {/* <div className="min-h-screen w-full border-x border-p4"> */}
           <Header />
-          <div className="w-full">{children}</div>
+          <div className="w-full h-[calc(100vh-100px)]   mt-[3.5rem]">
+            {children}
+          </div>
           <Footer />
           {/* </div> */}
         </div>

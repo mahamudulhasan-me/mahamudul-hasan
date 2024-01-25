@@ -43,7 +43,7 @@ const FrontendPage = () => {
               width={60}
               height={60}
               alt="tailwind"
-              className="w-16"
+              className="w-16"n
             />
             <p>Tailwind</p>
           </figure>
