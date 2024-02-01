@@ -1,9 +1,11 @@
-import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header/Header";
-import { Fira_Code } from "next/font/google";
+import Header from "@/components/Shared/Header/Header";
+import { Lato } from "next/font/google";
 import "./globals.css";
 
-const firaCode = Fira_Code({ subsets: ["latin"] });
+const inter = Lato({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "700", "900"],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -13,18 +15,53 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={firaCode.className}>
-        <div className="min-h-screen h-fit w-full content-container  z-auto  container mx-auto border-x border-p4">
-          <div className="-z-30  animate-content animate-rotate"></div>
+      <meta
+        name="keywords"
+        content="web design, web development, web developer, front end design, latest technology, trends, online store, accessories"
+      />
+      <meta name="robots" content="index, follow" />
+      <link rel="canonical" href="https://example.com/page" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta charset="UTF-8" />
+      <meta
+        name="description"
+        content="Welcome to our online store! Find the latest trends in fashion and accessories."
+      />
+      <meta name="image" content="https://example.com/images/cover.jpg" />
 
-          {/* <div className="min-h-screen w-full border-x border-p4"> */}
-          <Header />
-          <div className="w-full h-[calc(100vh-100px)]   mt-[3.5rem]">
-            {children}
-          </div>
-          <Footer />
-          {/* </div> */}
-        </div>
+      <meta
+        property="og:title"
+        content="Fashion Trends Online - Shop the Latest Styles"
+      />
+      <meta
+        property="og:description"
+        content="Discover the latest fashion trends and accessories at our online store. Shop now!"
+      />
+      <meta
+        property="og:image"
+        content="https://example.com/images/cover.jpg"
+      />
+      <meta property="og:url" content="https://example.com" />
+      <meta property="og:type" content="website" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:creator" content="@yourtwitterhandle" />
+      <meta
+        name="twitter:title"
+        content="Fashion Trends Online - Shop the Latest Styles"
+      />
+      <meta
+        name="twitter:description"
+        content="Discover the latest fashion trends and accessories at our online store. Shop now!"
+      />
+      <meta
+        name="twitter:image"
+        content="https://example.com/images/cover.jpg"
+      />
+
+      <body className={inter.className}>
+        <Header />
+        {children}
       </body>
     </html>
   );
