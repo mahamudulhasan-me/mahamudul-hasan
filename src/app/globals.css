@@ -22,6 +22,10 @@ html {
   border: 3px solid #0a192f;
   border-radius: 10px;
 }
+
+.arrow-btn {
+  @apply w-12 h-8 bg-navy-dark rounded-lg mx-auto text-white flex justify-center items-center;
+}
 /* button get resume styles  */
 .btn-getResume {
   --color: #64ffda;
@@ -74,4 +78,56 @@ html {
 
 .btn-getResume:active {
   filter: brightness(0.8);
+}
+
+/* another button  */
+.btn-getResume2 {
+  --green: #64ffda;
+  font-size: 15px;
+
+  letter-spacing: 0.06em;
+
+  font-family: inherit;
+  border-radius: 0.4em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 1px solid var(--green);
+  background: linear-gradient(
+    to right,
+    rgba(27, 253, 156, 0.1) 1%,
+    transparent 40%,
+    transparent 60%,
+    rgba(27, 253, 156, 0.1) 100%
+  );
+  color: var(--green);
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4),
+    0 0 9px 3px rgba(27, 253, 156, 0.1);
+}
+
+.btn-getResume2:hover {
+  color: #82ffc9;
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6),
+    0 0 9px 3px rgba(27, 253, 156, 0.2);
+}
+
+.btn-getResume2:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform 0.4s ease-in-out;
+  background: linear-gradient(
+    to right,
+    transparent 1%,
+    rgba(27, 253, 156, 0.1) 40%,
+    rgba(27, 253, 156, 0.1) 60%,
+    transparent 100%
+  );
+}
+
+.btn-getResume2:hover:before {
+  transform: translateX(15em);
 }
