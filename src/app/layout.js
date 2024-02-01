@@ -1,10 +1,10 @@
 import Header from "@/components/Shared/Header/Header";
-import { Lato } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const inter = Lato({
+const inter = Poppins({
   subsets: ["latin"],
-  weight: ["100", "300", "400", "700", "900"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata = {
