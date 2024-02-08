@@ -17,7 +17,9 @@ const HeroSection = () => {
           I&apos;m focused on building accessible, human-centered products at
           Upstatement.
         </p>
-        <button className="btn-getResume2 mt-8">Get Resume</button>
+        <button className="btn-getResume2 mt-8 relative px-10 py-3">
+          Get Resume
+        </button>
       </aside>
       <aside>
         <SnakeGame />

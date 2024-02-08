@@ -22,6 +22,112 @@ html {
   border: 3px solid #0a192f;
   border-radius: 10px;
 }
+/* CSS */
+@keyframes moveLeftRight {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(8px); /* Adjust the distance as needed */
+  }
+}
+
+.moved {
+  animation: moveLeftRight 3s linear infinite;
+}
+/* Keyframes for moving left to right */
+@keyframes moveLeftRight {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(8px); /* Adjust the distance as needed */
+  }
+}
+
+/* Keyframes for moving right to left */
+@keyframes moveRightLeft {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-8px); /* Adjust the distance as needed */
+  }
+}
+
+/* Keyframes for moving top to bottom */
+@keyframes moveTopBottom {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px); /* Adjust the distance as needed */
+  }
+}
+
+/* Keyframes for moving bottom to top */
+@keyframes moveBottomTop {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px); /* Adjust the distance as needed */
+  }
+}
+.hovered-text {
+  position: relative;
+  display: inline-block;
+  color: #64ffda;
+  transition: border-bottom 0.3s ease; /* Transition for border-bottom */
+}
+
+.hovered-text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: #64ffda;
+  transition: width 0.3s ease; /* Transition for width */
+}
+
+.hovered-text:hover::after {
+  width: 100%; /* Expand width to 100% on hover */
+  animation: slideRight 0.3s ease; /* Animate from left to right */
+}
+@keyframes slideRight {
+  0% {
+    width: 0;
+    left: 0;
+  } /* Start with no width and left position at 0 */
+  100% {
+    width: 100%;
+    left: 0;
+  } /* Expand width to 100% and keep left position at 0 */
+}
+
+/* Apply animations to different elements */
+.moved-left-right {
+  animation: moveLeftRight 3s ease-in-out infinite;
+}
+
+.moved-right-left {
+  animation: moveRightLeft 3s ease-out infinite;
+}
+
+.moved-top-bottom {
+  animation: moveTopBottom 3s linear infinite;
+}
+
+.moved-bottom-top {
+  animation: moveBottomTop 3s linear infinite;
+}
 
 .arrow-btn {
   @apply w-12 h-8 bg-navy-dark rounded-lg mx-auto text-white flex justify-center items-center;

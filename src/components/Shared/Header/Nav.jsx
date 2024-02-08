@@ -9,7 +9,11 @@ const Nav = () => {
   return (
     <nav className=" space-x-8 ">
       {navItems.map((item) => (
-        <ActiveLink key={item.name} href={item.href}>
+        <ActiveLink
+          key={item.name}
+          href={item.href}
+          className="hover:text-green transition-all"
+        >
           {item.name}
         </ActiveLink>
       ))}
