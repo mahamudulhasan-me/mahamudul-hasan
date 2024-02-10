@@ -1,70 +1,114 @@
-import HeroSection from "@/components/HeroSection/HeroSection";
+import Nav from "@/components/Nav/Nav";
 import About from "@/components/Sections/About/About";
-import Jobs from "@/components/Sections/Jobs/Jobs";
-import Link from "next/link";
-import { FaFacebookF } from "react-icons/fa";
-import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
+import Experience from "@/components/Sections/Experience/Experience";
+import Projects from "@/components/Sections/Projects/Projects";
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+
 const socialIcons = [
   {
     name: "github",
-    url: "",
-    icon: FiGithub,
+    url: "", // Add your GitHub URL
+    icon: FaGithub,
   },
   {
     name: "linkedin",
-    url: "",
-    icon: FiLinkedin,
+    url: "", // Add your LinkedIn URL
+    icon: FaLinkedin,
   },
   {
     name: "facebook",
-    url: "",
-    icon: FaFacebookF,
+    url: "", // Add your Facebook URL
+    icon: FaFacebook,
   },
   {
     name: "instagram",
-    url: "",
-    icon: FiInstagram,
+    url: "", // Add your Instagram URL
+    icon: FaInstagram,
   },
 ];
-export default function Home() {
-  return (
-    <main className="container mx-auto px-[7%] relative w-full">
-      <HeroSection />
-      <About />
-      <Jobs />
-      {/* <div className="flex flex-col items-center text-slate-light fixed right-10 bottom-0">
-        <p
-          className="flex flex-col items-center text-sm"
-          style={{ transform: "rotate(-90deg)" }}
-        >
-          <span>m</span>
-          <span>a</span>
-          <span>h</span>
-          <span>@</span>
-          <span>g</span>
-          <span>m</span>
-          <span>a</span>
-          <span>i</span>
-          <span>l</span>
-        </p>
 
-        <div className="h-24 w-[1px] bg-slate-light"></div>
-      </div> */}
-      <div className="flex flex-col items-center text-slate-light fixed left-10 bottom-0 space-y-8">
-        <div className="space-y-7 text-xl flex flex-col items-center">
-          {socialIcons.map((item) => (
-            <p
-              key={item.name}
-              className="hover:text-green group transition-all hobby:w-10 h-5  rounded-full flex items-center justify-center"
-            >
-              <Link href={item.url} className="hover:mb-1.5 transition-all">
-                {<item.icon />}
-              </Link>
+const MainPage = () => {
+  //   const durationFn = function (deltaTop) {
+  //     return deltaTop;
+  //   };
+
+  //   const scrollToTop = () => {
+  //     animateScroll.scrollToTop();
+  //   };
+  //   const scrollTo = (offset) => {
+  //     scroller.scrollTo("scroll-to-element", {
+  //       duration: 800,
+  //       delay: 0,
+  //       smooth: "easeInOutQuart",
+  //       offset: offset,
+  //     });
+  //   };
+  //   const scrollToWithContainer = () => {
+  //     let goToContainer = new Promise((resolve, reject) => {
+  //       Events.scrollEvent.register("end", () => {
+  //         resolve(true);
+  //         Events.scrollEvent.remove("end");
+  //       });
+
+  //       scroller.scrollTo("scroll-container", {
+  //         duration: 800,
+  //         delay: 0,
+  //         smooth: "easeInOutQuart",
+  //       });
+  //     });
+
+  //     goToContainer.then(() =>
+  //       scroller.scrollTo("scroll-container-second-element", {
+  //         duration: 800,
+  //         delay: 0,
+  //         smooth: "easeInOutQuart",
+  //         containerId: "scroll-container",
+  //         offset: 50,
+  //       })
+  //     );
+  //   };
+
+  return (
+    <main className="w-full relative container mx-auto px-[8%] grid grid-cols-12 justify-between items-start">
+      <div className="col-span-6 h-[calc(100vh-160px)] relative">
+        <div className="fixed flex flex-col justify-between pt-20 pb-14  h-full  space-y-4 ">
+          <header className="">
+            <p className="text-green">Hi, my name is</p>
+            <h1 className="text-5xl text-slate-100 font-semibold font-sans">
+              Mahamudul Hasan
+            </h1>
+            <h3 className="text-2xl text-slate-100 mt-2 mb-3">
+              Web Application Developer
+            </h3>
+            <p className="text-slate-400">
+              I build pixel-perfect, engaging, and <br /> accessible digital
+              experiences.
             </p>
-          ))}
+            <Nav />
+          </header>
+          <div className="mb-5 flex items-center space-x-6">
+            {socialIcons.map((item) => (
+              <a
+                href={item.url}
+                key={item.name}
+                className="text-2xl text-slate-light hover:text-slate-lightest transition-all"
+              >
+                <item.icon />
+              </a>
+            ))}
+            <button className="btn-getResume2  relative px-3 py-1.5">
+              Resume
+            </button>
+          </div>
         </div>
-        <span className="h-24 w-[1px] bg-slate-light"></span>
+      </div>
+      <div className="col-span-6">
+        <About />
+        <Experience />
+        <Projects />
       </div>
     </main>
   );
-}
+};
+
+export default MainPage;
