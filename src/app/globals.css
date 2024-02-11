@@ -46,11 +46,20 @@ html {
 .hovered-text {
   position: relative;
   display: inline-block;
+  cursor: pointer;
   color: #64ffda;
   transition: border-bottom 0.3s ease; /* Transition for border-bottom */
 }
 
-.hovered-text::after {
+.hovered-text2 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: border-bottom 0.3s ease; /* Transition for border-bottom */
+}
+
+.hovered-text::after,
+.hovered-text2::after {
   content: "";
   position: absolute;
   left: 0;
@@ -61,7 +70,8 @@ html {
   transition: width 0.3s ease; /* Transition for width */
 }
 
-.hovered-text:hover::after {
+.hovered-text:hover::after,
+.hovered-text2:hover::after {
   width: 100%; /* Expand width to 100% on hover */
   animation: slideRight 0.3s ease; /* Animate from left to right */
 }

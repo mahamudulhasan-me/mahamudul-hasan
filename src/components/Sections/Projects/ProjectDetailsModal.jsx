@@ -24,7 +24,7 @@ const ProjectDetailsModal = ({ setShowModal }) => {
     <>
       <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center z-50 overflow-y-auto no-scrollbar bg-slate-950/50 pt-10">
         <div className=" bg-navy-dark mt-10 rounded-md shadow-lg max-w-3xl w-1/2 overflow-hidden">
-          <div className="relative rounded-t-xl overflow-hidden">
+          <div className="relative rounded-t-xl overflow-hidden min-h-24">
             <button
               onClick={() => setShowModal(false)}
               className="absolute z-50 top-2 right-2  ring ring-rose-600 text-rose-600 hover:bg-rose-600 hover:text-slate-300 rounded-full transition-all"

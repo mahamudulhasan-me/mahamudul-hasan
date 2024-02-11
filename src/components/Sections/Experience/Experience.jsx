@@ -10,12 +10,13 @@ const Experience = () => {
       <SectionHead />
       <Link
         href="#"
-        className="flex  gap-10 text-slate-300 group hover:bg-navy-light p-4 rounded-md transition-all hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:ease-in-out ease-linear"
+        className="flex items-start  gap-10 text-slate-300 group 0   hover:ease-in-out ease-linear hover:bg-navy-light p-4 rounded-md transition-all   lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg"
       >
         <p className="w-[32%] uppercase text-sm">2021—Present</p>
         <aside className="w-full">
-          <h1 className="text-xl text-slate-200 flex items-center gap-2  transition-all group-hover:text-green">
-            Front end developer{" "}
+          <h1 className="text-xl text-slate-200 flex items-center gap-2  transition-all group-hover:text-green ">
+            <span className="hovered-text2"> Front end developer </span>
+
             <span className=" group-hover:translate-x-1 group-hover:mb-2 transition-all">
               <RxArrowTopRight />
             </span>
@@ -44,7 +45,7 @@ const Experience = () => {
       </Link>
       <Link
         href="#"
-        className="flex items-start  gap-10 text-slate-300 group hover:bg-navy-light p-4 rounded-md transition-all hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:ease-in-out ease-linear"
+        className="flex items-start  gap-10 text-slate-300 group 0   hover:ease-in-out ease-linear hover:bg-navy-light p-4 rounded-md transition-all   lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg"
       >
         <p className="w-[32%] uppercase text-sm">2021—Present</p>
         <aside className="w-full">

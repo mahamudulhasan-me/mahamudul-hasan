@@ -1,3 +1,13 @@
+import { MdArrowRight } from "react-icons/md";
+const skills = [
+  "JavaScript(ES6+)",
+  "TypeScript",
+  "Next.js",
+  "React",
+  "TailwindCSS",
+  "Express.js",
+  "MongoDB",
+];
 const About = () => {
   return (
     <section
@@ -25,6 +35,14 @@ const About = () => {
         hanging out with my wife and two cats, or running around Hyrule
         searching for Korok seeds K o r o k s e e d s .
       </p>
+      <div className="w-3/4 grid grid-cols-2 gap-x-4 space-y-1">
+        {skills.map((skill) => (
+          <p key={skill} className="flex items-center space-x-2 ">
+            <MdArrowRight className="text-green text-xl" />
+            <span className="hovered-text2">{skill}</span>
+          </p>
+        ))}
+      </div>
     </section>
   );
 };
