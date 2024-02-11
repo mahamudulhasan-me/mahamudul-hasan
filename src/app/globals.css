@@ -1,6 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* global.css or tailwind.config.js */
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
 body {
   background-color: #0a192f;
   -webkit-font-smoothing: antialiased;
@@ -21,6 +33,16 @@ html {
   border: 3px solid #0a192f;
   border-radius: 10px;
 }
+.image-gallery-left-nav .image-gallery-svg,
+.image-gallery-right-nav .image-gallery-svg {
+  height: 52px !important;
+  width: 32px !important;
+}
+/* global.css */
+.custom-scroll::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for webkit-based browsers */
+}
+
 .hovered-text {
   position: relative;
   display: inline-block;

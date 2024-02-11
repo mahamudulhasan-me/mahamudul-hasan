@@ -9,7 +9,7 @@ import { RxArrowTopRight } from "react-icons/rx";
 import ProjectDetailsModal from "./ProjectDetailsModal";
 const tags = ["React", "Next.js", "Tailwind", "JavaScript", "HTML", "CSS"];
 const ProjectCard = () => {
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
       <div className="flex items-start  gap-6 text-slate-300 group hover:bg-navy-light p-4 rounded-md transition-all  hover:ease-in-out ease-linear  lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg">
