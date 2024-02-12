@@ -1,8 +1,9 @@
-const SectionHead = () => {
+const SectionHead = ({ icon: Icon, title }) => {
   return (
-    <div className="text-slate-200 flex items-center mb-8 px-4">
-      <h2 className="text-2xl w-full">Where I’ve Worked</h2>
-      <span className="w-full h-[1px] bg-navy-lightest"></span>
+    <div className="text-slate-200 flex items-center gap-2 mb-8 pl-4 text-2xl">
+      <Icon className="text-teal-400" />
+      <h2 className="text-2xl">{title}</h2>
+      <span className="w-[36%] h-[1px] bg-navy-lightest"></span>
     </div>
   );
 };

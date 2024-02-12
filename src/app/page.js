@@ -1,5 +1,7 @@
 import Nav from "@/components/Nav/Nav";
 import About from "@/components/Sections/About/About";
+import Contact from "@/components/Sections/Contact/Contact";
+import Education from "@/components/Sections/Education/Education";
 import Experience from "@/components/Sections/Experience/Experience";
 import Projects from "@/components/Sections/Projects/Projects";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
@@ -106,6 +108,8 @@ const MainPage = () => {
         <About />
         <Experience />
         <Projects />
+        <Education />
+        <Contact />
       </div>
     </main>
   );

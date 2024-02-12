@@ -1,13 +1,16 @@
 import SectionHead from "@/components/SectionHead/SectionHead";
 import Tag from "@/components/Tag/Tag";
 import Link from "next/link";
+import { FaCode } from "react-icons/fa6";
+import { FiExternalLink } from "react-icons/fi";
 import { MdOutlineArrowRight } from "react-icons/md";
 import { RxArrowTopRight } from "react-icons/rx";
 const tags = ["React", "Next.js", "Tailwind", "JavaScript", "HTML", "CSS"];
+
 const Experience = () => {
   return (
     <div id="experience" className="pt-20 space-y-2">
-      <SectionHead />
+      <SectionHead icon={FaCode} title="Where I’ve Worked" />
       <Link
         href="#"
         className="flex items-start  gap-10 text-slate-300 group 0   hover:ease-in-out ease-linear hover:bg-navy-light p-4 rounded-md transition-all   lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg"
@@ -81,9 +84,9 @@ const Experience = () => {
         href="#"
         className="ml-4 text-slate-100 hover:text-teal-400 transition-all flex items-center gap-2 group font-semibold"
       >
-        <p>View Full Resume</p>
+        <p className="hovered-text2">View Full Resume</p>
         <span className=" group-hover:translate-x-1 group-hover:mb-2 transition-all">
-          <RxArrowTopRight />
+          <FiExternalLink />
         </span>
       </Link>
     </div>

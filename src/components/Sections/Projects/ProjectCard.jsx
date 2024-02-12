@@ -28,9 +28,9 @@ const ProjectCard = () => {
         <div className="w-[60%]">
           <Link
             href="#"
-            className="text-xl text-slate-200 flex items-center gap-2  transition-all group-hover:text-green"
+            className="text-xl text-slate-200 flex items-center gap-2  transition-all group-hover:text-green "
           >
-            Dance School
+            <span className="hovered-text2"> Dance School</span>
             <span className=" group-hover:translate-x-1 group-hover:mb-2 transition-all">
               <RxArrowTopRight />
             </span>
