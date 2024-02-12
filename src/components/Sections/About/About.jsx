@@ -40,7 +40,7 @@ const About = () => {
           searching for Korok seeds K o r o k s e e d s .
         </p>
       </div>
-      <div className="w-3/4 pl-2 md:pl-0 grid grid-cols-2 gap-x-4 justify-between space-y-1">
+      <div className="w-3/4 pl-2  grid grid-cols-2 gap-x-4 justify-between space-y-1">
         {skills.map((skill) => (
           <p key={skill} className="flex items-center space-x-2 ">
             <MdArrowRight className="text-green text-xl" />
