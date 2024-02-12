@@ -1,3 +1,4 @@
+import BackToTop from "@/components/BackToTop/BackToTop";
 import Nav from "@/components/Nav/Nav";
 import About from "@/components/Sections/About/About";
 import Contact from "@/components/Sections/Contact/Contact";
@@ -31,53 +32,13 @@ const socialIcons = [
 ];
 
 const MainPage = () => {
-  //   const durationFn = function (deltaTop) {
-  //     return deltaTop;
-  //   };
-
-  //   const scrollToTop = () => {
-  //     animateScroll.scrollToTop();
-  //   };
-  //   const scrollTo = (offset) => {
-  //     scroller.scrollTo("scroll-to-element", {
-  //       duration: 800,
-  //       delay: 0,
-  //       smooth: "easeInOutQuart",
-  //       offset: offset,
-  //     });
-  //   };
-  //   const scrollToWithContainer = () => {
-  //     let goToContainer = new Promise((resolve, reject) => {
-  //       Events.scrollEvent.register("end", () => {
-  //         resolve(true);
-  //         Events.scrollEvent.remove("end");
-  //       });
-
-  //       scroller.scrollTo("scroll-container", {
-  //         duration: 800,
-  //         delay: 0,
-  //         smooth: "easeInOutQuart",
-  //       });
-  //     });
-
-  //     goToContainer.then(() =>
-  //       scroller.scrollTo("scroll-container-second-element", {
-  //         duration: 800,
-  //         delay: 0,
-  //         smooth: "easeInOutQuart",
-  //         containerId: "scroll-container",
-  //         offset: 50,
-  //       })
-  //     );
-  //   };
-
   return (
-    <main className="w-full relative container mx-auto px-[8%] grid grid-cols-12 justify-between items-start">
-      <div className="col-span-6 h-[calc(100vh-160px)] relative">
-        <div className="fixed flex flex-col justify-between pt-20 pb-14  h-full  space-y-4 ">
-          <header className="">
+    <main className="w-full relative container mx-auto md:px-[8%] px-4 md:grid grid-cols-12 justify-between items-start">
+      <div className="col-span-6 md:px-0 px-4 md:h-[calc(100vh-160px)] relative ">
+        <div className="md:fixed flex flex-col md:justify-between pt-20 pb-14  h-full  md:space-y-4 ">
+          <header>
             <p className="text-green">Hi, my name is</p>
-            <h1 className="text-5xl text-slate-100 font-semibold font-sans">
+            <h1 className="md:text-5xl text-4xl text-slate-100 font-semibold font-sans">
               Mahamudul Hasan
             </h1>
             <h3 className="text-2xl text-slate-100 mt-2 mb-3">
@@ -89,7 +50,7 @@ const MainPage = () => {
             </p>
             <Nav />
           </header>
-          <div className="mb-5 flex items-center space-x-6">
+          <div className="mb-5 md:mt-0 mt-5 flex items-center space-x-6">
             {socialIcons.map((item) => (
               <a
                 href={item.url}
@@ -113,6 +74,7 @@ const MainPage = () => {
         <Contact />
         <Footer />
       </div>
+      <BackToTop />
     </main>
   );
 };

@@ -10,7 +10,7 @@ const Projects = () => {
       <ProjectCard />
       <Link
         href="#"
-        className="ml-4 text-slate-100 hover:text-teal-400 transition-all flex items-center gap-2 group font-semibold"
+        className="ml-4 w-fit text-slate-100 hover:text-teal-400 transition-all flex items-center gap-2 group font-semibold"
       >
         <p className="hovered-text2">View All Projects</p>
         <span className=" group-hover:translate-x-1 group-hover:mb-2 transition-all">

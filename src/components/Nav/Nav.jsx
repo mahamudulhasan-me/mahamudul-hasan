@@ -29,7 +29,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="mt-20 text-slate-light space-y-4 ">
+    <nav className="md:block hidden mt-20 text-slate-light space-y-4 ">
       {navItems.map((item) => (
         <ScrollLink
           className={`${

@@ -5,7 +5,12 @@ const Footer = () => {
     <footer className="text-slate-400 text-sm pb-20">
       Design inspired by <span className="hovered-text">Brittany Chiang</span>,
       developed by{" "}
-      <Link href="#" className="hovered-text">
+      <Link
+        href="https://github.com/mahamudulhasan-me"
+        target="_blank"
+        rel="noreferrer"
+        className="hovered-text"
+      >
         me
       </Link>{" "}
       and built with <span className="hovered-text">Next.js</span> and{" "}
