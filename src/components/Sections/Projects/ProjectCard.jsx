@@ -12,20 +12,19 @@ const ProjectCard = () => {
   const [showModal, setShowModal] = useState(false);
   return (
     <>
-      <div className="flex items-start  gap-6 text-slate-300 group hover:bg-navy-light p-4 rounded-md transition-all  hover:ease-in-out ease-linear  lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg">
-        <div className="w-[35%]">
+      <div className="flex md:flex-row flex-col items-start  gap-6 text-slate-300 group hover:bg-navy-light p-4 rounded-md transition-all  hover:ease-in-out ease-linear  lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg">
+        <div className="md:w-[35%]">
           <figure className="w-full h-full border-2 rounded-md border-slate-700 group-hover:border-slate-600">
             <Image
               src="/images/danceSchool.png"
               width={250}
               height={250}
               alt="image"
-              fit
               className="w-full h-full object-cover rounded-md"
             />
           </figure>
         </div>
-        <div className="w-[60%]">
+        <div className="md:w-[60%]">
           <Link
             href="#"
             className="text-xl text-slate-200 flex items-center gap-2  transition-all group-hover:text-green "

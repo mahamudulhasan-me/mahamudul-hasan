@@ -1,3 +1,4 @@
+import MobileSectionHead from "@/components/SectionHead/MobileSectionHead";
 import SectionHead from "@/components/SectionHead/SectionHead";
 import Link from "next/link";
 import { FaProjectDiagram } from "react-icons/fa";
@@ -5,8 +6,12 @@ import { FiExternalLink } from "react-icons/fi";
 import ProjectCard from "./ProjectCard";
 const Projects = () => {
   return (
-    <section id="projects" className="pt-20">
+    <section id="projects" className="md:pt-20 md:pb-0 pb-10">
       <SectionHead icon={FaProjectDiagram} title="Projects I've Completed" />
+      <MobileSectionHead
+        icon={FaProjectDiagram}
+        title="Projects I've Completed"
+      />
       <ProjectCard />
       <Link
         href="#"

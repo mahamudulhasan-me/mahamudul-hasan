@@ -2,7 +2,7 @@ import MobileSectionHead from "@/components/SectionHead/MobileSectionHead";
 import { FcAbout } from "react-icons/fc";
 import { MdArrowRight } from "react-icons/md";
 const skills = [
-  "JavaScript(ES6+)",
+  "JavaScript",
   "TypeScript",
   "Next.js",
   "React",
@@ -14,10 +14,10 @@ const About = () => {
   return (
     <section
       id="about"
-      className="text-slate-400 space-y-5 leading-6 md:pt-20 pb-10 text-justify "
+      className="text-slate-400 space-y-5 leading-6 md:pt-20 md:pb-0 pb-10 text-justify md:p-4 p-0"
     >
       <MobileSectionHead icon={FcAbout} title="About" />
-      <div className="p-4">
+      <div className="px-4 md:px0">
         <p>
           Back in 2012, I decided to try my hand at creating custom Tumblr
           themes and tumbled head first into the rabbit hole of coding and web
@@ -40,7 +40,7 @@ const About = () => {
           searching for Korok seeds K o r o k s e e d s .
         </p>
       </div>
-      <div className="w-3/4 grid grid-cols-2 gap-x-4 space-y-1">
+      <div className="w-3/4 pl-2 md:pl-0 grid grid-cols-2 gap-x-4 justify-between space-y-1">
         {skills.map((skill) => (
           <p key={skill} className="flex items-center space-x-2 ">
             <MdArrowRight className="text-green text-xl" />

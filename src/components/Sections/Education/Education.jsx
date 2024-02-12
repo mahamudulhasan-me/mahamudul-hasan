@@ -1,3 +1,4 @@
+import MobileSectionHead from "@/components/SectionHead/MobileSectionHead";
 import SectionHead from "@/components/SectionHead/SectionHead";
 import { FaGraduationCap } from "react-icons/fa";
 const educations = [
@@ -22,14 +23,16 @@ const educations = [
     department: "Science",
   },
 ];
+
 const Education = () => {
   return (
-    <div id="education" className="pt-20">
+    <div id="education" className="md:pt-20 md:pb-0 pb-10">
       <SectionHead icon={FaGraduationCap} title="Education" />{" "}
+      <MobileSectionHead icon={FaGraduationCap} title="Education" />
       {educations.map((edu) => (
         <div
           key={edu.institute}
-          className="flex items-start justify-start gap-10 text-slate-300 group hover:ease-in-out ease-linear hover:bg-navy-light p-4 rounded-md transition-all   lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg cursor-pointer"
+          className="flex md:flex-row flex-col items-start justify-start md:gap-10 text-slate-300 group hover:ease-in-out ease-linear hover:bg-navy-light p-4 rounded-md transition-all   lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg cursor-pointer"
         >
           <p className="w-[32%] uppercase text-sm">{edu?.duration}</p>
           <aside className="w-full">
