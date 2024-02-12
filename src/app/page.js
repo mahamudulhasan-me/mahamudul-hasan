@@ -3,6 +3,7 @@ import About from "@/components/Sections/About/About";
 import Contact from "@/components/Sections/Contact/Contact";
 import Education from "@/components/Sections/Education/Education";
 import Experience from "@/components/Sections/Experience/Experience";
+import Footer from "@/components/Sections/Footer/Footer";
 import Projects from "@/components/Sections/Projects/Projects";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
@@ -110,6 +111,7 @@ const MainPage = () => {
         <Projects />
         <Education />
         <Contact />
+        <Footer />
       </div>
     </main>
   );
