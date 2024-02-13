@@ -6,7 +6,7 @@ const ExperienceCard = ({ industriesDetails }) => {
   const { duration, role, name, jobType, address, duties, skills } =
     industriesDetails;
   return (
-    <div className="flex md:flex-row flex-col items-start justify-between  md:gap-2 text-slate-300 group 0   hover:ease-in-out ease-linear hover:bg-navy-light p-4 rounded-md transition-all   lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg">
+    <div className="flex md:flex-row flex-col items-start justify-between  md:gap-2 text-slate-300 group   hover:ease-in-out ease-linear hover:bg-navy-light p-4 rounded-md transition-all   hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg">
       <p className="w-[40%] uppercase text-sm mt-1">{duration}</p>
       <aside className="w-full">
         <h1 className="text-xl text-slate-200 flex items-center gap-2  transition-all group-hover:text-green ">
