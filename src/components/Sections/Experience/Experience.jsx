@@ -36,10 +36,10 @@ const industries = [
     duration: "July, 23 — Sep, 23",
     address: "Nodia, India",
     duties: [
-      "Building user interfaces and implementing designs using React, and Next.js",
-      "Developing server-side logic and APIs using  Express.js, and working with MongoDB",
-      "Integrating front-end and back-end components to create full-stack applications that meet project requirements",
-      "Working closely with senior developers, designers, and project managers to understand requirements and contribute to project development",
+      "Building user interfaces and implementing designs using React, and Next.js.",
+      "Developing server-side logic and APIs using  Express.js, and working with MongoDB.",
+      "Integrating front-end and back-end components to create full-stack applications that meet project requirements.",
+      "Working closely with senior developers, designers, and project managers to understand requirements and contribute to project development.",
     ],
     skills: [
       "TailwindCSS",

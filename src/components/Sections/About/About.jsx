@@ -48,7 +48,7 @@ const About = () => {
           Here are a few of the technologies I&apos;ve been honing my skills in
           recently:
         </p>
-        <div className="w-3/4   grid grid-cols-2 gap-x-4 justify-between space-y-1">
+        <div className="w-3/4  grid grid-cols-2 gap-x-4 justify-between space-y-1">
           {skills.map((skill) => (
             <p key={skill} className="flex items-center space-x-2 ">
               <MdArrowRight className="text-green text-xl" />
