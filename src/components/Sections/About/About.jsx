@@ -3,12 +3,12 @@ import { FcAbout } from "react-icons/fc";
 import { MdArrowRight } from "react-icons/md";
 
 const skills = [
-  "JavaScript",
   "TypeScript",
   "Next.js",
   "React",
   "TailwindCSS",
   "Express.js",
+  "GraphQL",
   "MongoDB",
 ];
 const About = () => {
@@ -56,12 +56,12 @@ const About = () => {
             </p>
           ))}
         </div>
-        <p>
+        {/* <p>
           Continuously seeking growth and embracing new challenges, I&apos;m
           excited to leverage my passion and expertise to create impactful
           solutions that resonate with users and push the boundaries of
           what&apos;s possible in the digital landscape.
-        </p>
+        </p> */}
       </div>
     </section>
   );
