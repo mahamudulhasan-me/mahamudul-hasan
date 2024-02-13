@@ -1,6 +1,7 @@
 import MobileSectionHead from "@/components/SectionHead/MobileSectionHead";
 import { FcAbout } from "react-icons/fc";
 import { MdArrowRight } from "react-icons/md";
+
 const skills = [
   "JavaScript",
   "TypeScript",
