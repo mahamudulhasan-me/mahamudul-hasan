@@ -47,7 +47,6 @@ const industries = [
       "Next.js",
       "React",
       "RESTful APIs",
-      "GraphQL",
       "JWT",
       "Express.js",
       "MongoDB",
@@ -58,7 +57,7 @@ const industries = [
 
 const Experience = () => {
   return (
-    <div id="experience" className="md:pt-20 md:pb-0 pb-10  space-y-4">
+    <div id="experience" className="md:pt-20 md:pb-0 pb-10  space-y-3">
       <SectionHead icon={FaCode} title="Where I’ve Worked" />
       <MobileSectionHead icon={FaCode} title="Where I’ve Worked" />
       {industries.map((ind) => (
