@@ -1,35 +1,12 @@
 import BackToTop from "@/components/BackToTop/BackToTop";
 import Nav from "@/components/Nav/Nav";
+import SocialLink from "@/components/Nav/SocialLink";
 import About from "@/components/Sections/About/About";
 import Contact from "@/components/Sections/Contact/Contact";
 import Education from "@/components/Sections/Education/Education";
 import Experience from "@/components/Sections/Experience/Experience";
 import Footer from "@/components/Sections/Footer/Footer";
 import Projects from "@/components/Sections/Projects/Projects";
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-
-const socialIcons = [
-  {
-    name: "github",
-    url: "", // Add your GitHub URL
-    icon: FaGithub,
-  },
-  {
-    name: "linkedin",
-    url: "", // Add your LinkedIn URL
-    icon: FaLinkedin,
-  },
-  {
-    name: "facebook",
-    url: "", // Add your Facebook URL
-    icon: FaFacebook,
-  },
-  {
-    name: "instagram",
-    url: "", // Add your Instagram URL
-    icon: FaInstagram,
-  },
-];
 
 const MainPage = () => {
   return (
@@ -51,18 +28,7 @@ const MainPage = () => {
             <Nav />
           </header>
           <div className="mb-5 md:mt-0 mt-5 flex items-center space-x-6">
-            {socialIcons.map((item) => (
-              <a
-                href={item.url}
-                key={item.name}
-                className="text-2xl text-slate-light hover:text-slate-lightest transition-all"
-              >
-                <item.icon />
-              </a>
-            ))}
-            <button className="btn-getResume2  relative px-3 py-1.5">
-              Resume
-            </button>
+            <SocialLink />
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import MobileSectionHead from "@/components/SectionHead/MobileSectionHead";
 import SectionHead from "@/components/SectionHead/SectionHead";
+import { projects } from "@/utils/projects";
 import Link from "next/link";
 import { FaProjectDiagram } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
@@ -12,7 +13,10 @@ const Projects = () => {
         icon={FaProjectDiagram}
         title="Projects I've Completed"
       />
-      <ProjectCard />
+      {projects.map((project) => (
+        <ProjectCard key={project.id} projectDetails={project} />
+      ))}
+
       <Link
         href="#"
         className="ml-4 w-fit text-slate-100 hover:text-teal-400 transition-all flex items-center gap-2 group font-semibold"
