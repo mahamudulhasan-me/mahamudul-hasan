@@ -1,61 +1,67 @@
+import MobileSectionHead from "@/components/SectionHead/MobileSectionHead";
 import { FcAbout } from "react-icons/fc";
 import { MdArrowRight } from "react-icons/md";
-import AboutPhoto from "./AboutPhoto";
 
 const skills = [
-  "JavaScript(ES6+)",
   "TypeScript",
   "Next.js",
   "React",
   "TailwindCSS",
   "Express.js",
+  "GraphQL",
   "MongoDB",
 ];
 const About = () => {
   return (
-    <section className="py-20 w-full  items-start justify-start">
-      <div className="flex justify-center items-start w-full gap-8">
-        <aside className="w-[50%]">
-          <div className="flex items-center justify-start space-x-1">
-            <FcAbout size={30} />
-            <h2 className="text-slate-lightest font-semibold text-3xl w-[30%]">
-              About Me
-            </h2>
-            <div className="w-[60%] h-[1px] rounded-md bg-navy-lightest "></div>
-          </div>
-          <article className="text-slate-dark  mt-4 space-y-4 text-justify">
-            <p>
-              Hello! My name is Brittany and I enjoy creating things that live
-              on the internet. My interest in web development started back in
-              2012 when I decided to try editing custom Tumblr themes — turns
-              out hacking together a custom reblog button taught me a lot about
-              HTML & CSS!
+    <section
+      id="about"
+      className="text-slate-400 space-y-5 leading-6 md:pt-20 md:pb-0 pb-10 text-justify md:p-4 p-0"
+    >
+      <MobileSectionHead icon={FcAbout} title="About" />
+      <div className="px-4 md:px-0 space-y-4">
+        <p>
+          As a final-year{" "}
+          <span className="hovered-text">Computer Science and Engineering</span>{" "}
+          student, my journey into the world of coding began from a place of{" "}
+          <span className="hovered-text"> passion</span>, and it has since
+          blossomed into a dedicated focus on web application development. With
+          a strong work ethic and a flair for creativity, I continually strive
+          to push the boundaries of what&apos;s possible in the digital realm.
+        </p>
+        <p>
+          Currently employed as a{" "}
+          <span className="hovered-text">Frontend Developer</span> at{" "}
+          <span className="hovered-text">Sundarban Courier Service</span>,
+          I&apos;ve accumulated over a year of invaluable{" "}
+          <span className="hovered-text">industry experience</span> in this
+          field. While my primary focus lies in frontend development, I&apos;m
+          also actively exploring backend technologies to deepen my
+          understanding of the web ecosystem.
+        </p>
+        <p>
+          Beyond coding, I find solace in the pages of books and occasionally
+          pen down my thoughts. Outside the realm of technology, I revel in the
+          simplicity of nature and nurturing my garden, which serves as a source
+          of balance and inspiration in my life.
+        </p>
+        <p>
+          Here are a few of the technologies I&apos;ve been honing my skills in
+          recently:
+        </p>
+        <div className="w-3/4  grid grid-cols-2 gap-x-4 justify-between space-y-1">
+          {skills.map((skill) => (
+            <p key={skill} className="flex items-center space-x-2 ">
+              <MdArrowRight className="text-green text-xl" />
+              <span className="hovered-text2">{skill}</span>
             </p>
-            <p>
-              <span className="hovered-text">Fast-forward to today,</span> and
-              I’ve had the privilege of working at an advertising agency, a
-              start-up, a huge corporation, and a student-led design studio. My
-              main focus these days is building accessible, inclusive products
-              and digital experiences at Upstatement for a variety of clients.
-            </p>
-            <p>
-              I also recently launched a course that covers everything you need
-              to build a web app with the Spotify API using Node & React.
-            </p>
-            <p>Here are a few technologies I’ve been working with recently:</p>
-            <div className="w-3/4 grid grid-cols-2 space-y-1">
-              {skills.map((skill) => (
-                <p key={skill} className="flex items-center space-x-2">
-                  <MdArrowRight className="text-green text-xl" />
-                  {skill}
-                </p>
-              ))}
-            </div>
-          </article>
-        </aside>
-        <aside className="w-[40%] mt-10">
-          <AboutPhoto />
-        </aside>
+          ))}
+        </div>
+        {/* <p>
+          Continuously seeking growth and embracing new challenges, I&apos;m
+          excited to leverage my passion and expertise to create impactful
+          solutions that resonate with users and push the boundaries of
+          what&apos;s possible in the digital landscape.
+        </p> */}
       </div>
     </section>
   );
