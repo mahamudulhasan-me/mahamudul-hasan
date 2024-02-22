@@ -28,7 +28,7 @@ const socialIcons = [
 ];
 export default function Home() {
   return (
-    <main className="container mx-auto px-[7%] relative w-full">
+    <main className="container mx-auto px-[7%] relative w-full z-30">
       <HeroSection />
       <About />
       <Jobs />

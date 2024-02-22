@@ -1,44 +1,24 @@
-.tabs {
-  /* Other styles remain unchanged */
-  min-width: unset; /* Remove min-width to allow vertical layout */
-  display: flex; /* Use flexbox to arrange items vertically */
-  flex-direction: column; /* Arrange items in a column */
-  height: 400px; /* Adjust the height as needed */
+/* JobTabs.css */
+.slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px; /* Adjust as needed */
+  height: 4px;
+  background-color: #39bcd3;
+  transition: left 0.3s ease;
 }
 
-label,
-#slider {
-  /* Other styles remain unchanged */
-  width: auto; /* Adjust width as needed */
-  height: 80px; /* Adjust height as needed */
+.active {
+  color: #39bcd3;
 }
 
-.content {
-  /* Other styles remain unchanged */
-  top: unset; /* Remove top positioning */
-  bottom: unset; /* Remove bottom positioning */
-  left: 200px; /* Adjust left positioning for content */
-  right: 0; /* Remove right positioning */
-  width: calc(100% - 200px); /* Calculate width for content */
-  height: 100%; /* Set height to 100% */
-  display: none; /* Hide content initially */
-}
-
-#slider {
-  /* Other styles remain unchanged */
-  border-bottom: none; /* Remove border-bottom */
-  border-right: 3px solid white; /* Add border-right for slider */
-  margin: 0px; /* Remove margin */
-  transform: translate(0px, -400px); /* Adjust initial position */
-}
-
-/* Adjust transformations for checked radio buttons */
-[type="radio"]:checked ~ #slider {
-  transform: translate(0px, 0px);
-}
-
-[type="radio"],
-#slider {
-  /* Other styles remain unchanged */
-  transition: transform 0.5s; /* Add transition */
+.active::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #39bcd3;
 }
