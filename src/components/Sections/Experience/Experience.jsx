@@ -17,11 +17,10 @@ const Experience = () => {
       ))}
 
       <Link
-        href="https://drive.google.com/file/d/13oHAeC0c8ZZ3mnhuhP2LTwCx2PZuciFi/view?usp=drive_link"
+        href={"Mahmudul's Resume [Front-End Developer] .pdf"}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Resume Link"
-        download
         className="ml-4 w-fit text-slate-100 hover:text-teal-400 transition-all flex items-center gap-2 group font-semibold"
       >
         <p className="hovered-text2">View Full Resume</p>

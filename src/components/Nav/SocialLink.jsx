@@ -39,9 +39,9 @@ const SocialLink = () => {
         </Link>
       ))}
       <Link
-        href={
-          "https://drive.usercontent.google.com/u/0/uc?id=13oHAeC0c8ZZ3mnhuhP2LTwCx2PZuciFi&export=download"
-        }
+        href={"Mahmudul's Resume [Front-End Developer] .pdf"}
+        target="_blank"
+        download
       >
         <button className="btn-getResume2  relative px-3 py-1.5 flex items-center gap-0.5">
           Resume <FiDownloadCloud />
