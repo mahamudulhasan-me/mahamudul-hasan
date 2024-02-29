@@ -17,7 +17,7 @@ const Experience = () => {
       ))}
 
       <Link
-        href={"Mahmudul's Resume [Front-End Developer] .pdf"}
+        href={"Mahmudul's_Resume.pdf"}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Resume Link"
