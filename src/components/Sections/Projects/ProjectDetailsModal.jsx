@@ -27,8 +27,8 @@ const ProjectDetailsModal = ({ projectDetails, setShowModal }) => {
   const desc = description.split(". ");
   return (
     <>
-      <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center z-50 overflow-y-auto no-scrollbar bg-slate-950/50 pt-10">
-        <div className=" bg-navy-dark mt-10 rounded-md shadow-lg max-w-3xl w-1/2 overflow-hidden border border-slate-700">
+      <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center z-50 overflow-y-auto no-scrollbar bg-slate-950/50  py-5">
+        <div className=" bg-navy-dark  rounded-md shadow-lg max-w-3xl w-1/2 h-full overflow-auto border border-slate-700 scrollbar-hide">
           <div className="relative rounded-t-xl overflow-hidden min-h-24">
             <button
               onClick={() => setShowModal(false)}

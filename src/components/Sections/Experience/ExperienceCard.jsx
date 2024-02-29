@@ -1,9 +1,9 @@
 import Tag from "@/components/Tag/Tag";
+import Link from "next/link";
 import { MdOutlineArrowRight } from "react-icons/md";
 import { RxArrowTopRight } from "react-icons/rx";
-
 const ExperienceCard = ({ industriesDetails }) => {
-  const { duration, role, name, jobType, address, duties, skills } =
+  const { duration, role, name, link, jobType, address, duties, skills } =
     industriesDetails;
   return (
     <div className="flex md:flex-row flex-col items-start justify-between  md:gap-2 text-slate-300 group   hover:ease-in-out ease-linear hover:bg-navy-light p-4 rounded-md transition-all   hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg">
@@ -16,7 +16,9 @@ const ExperienceCard = ({ industriesDetails }) => {
             <RxArrowTopRight />
           </span>
         </h1>
-        <h2>{name}</h2>
+        <Link href={link} target="_blank" rel="noopener noreferrer">
+          {name}
+        </Link>
         <p className="text-sm">{jobType}</p>
         <p className="text-sm">{address}</p>
         <div className="text-slate-400 w-full text-sm my-3 space-y-2">

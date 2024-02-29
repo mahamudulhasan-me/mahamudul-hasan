@@ -33,6 +33,14 @@ html {
   border: 3px solid #0a192f;
   border-radius: 10px;
 }
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
 /* loading style css  */
 .loading svg polyline {
   fill: none;
