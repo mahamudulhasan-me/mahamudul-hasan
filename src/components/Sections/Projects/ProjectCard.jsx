@@ -59,13 +59,23 @@ const ProjectCard = ({ projectDetails }) => {
             >
               View Details
             </button>
-            <Link href={clientCode} target="_blank" rel="noopener noreferrer">
+            <Link
+              href={clientCode}
+              aria-label="Client Code"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub
                 size={22}
                 className="hover:text-slate-200 transition-all"
               />
             </Link>
-            <Link href={liveLink} target="_blank" rel="noopener noreferrer">
+            <Link
+              href={liveLink}
+              aria-label="Live Link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <LuExternalLink
                 size={22}
                 className="hover:text-slate-200 transition-all"

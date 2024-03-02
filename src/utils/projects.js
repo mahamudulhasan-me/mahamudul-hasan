@@ -72,7 +72,7 @@ export const projects = [
   {
     id: 3,
     name: "Cook and Yummy",
-    title: "Cook and Yummy Recipe",
+    title: "Chefs and Yummy Recipe",
     description:
       "An enticing culinary haven where food lovers can explore a world of delicious recipes, professional cooking tips, and mouthwatering inspiration, empowering everyone to unleash their inner chef and create delectable meals with confidence.",
     cover: "/images/cookAndYummy/cook-banner.png",

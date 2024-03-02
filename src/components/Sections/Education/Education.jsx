@@ -1,40 +1,15 @@
 import MobileSectionHead from "@/components/SectionHead/MobileSectionHead";
 import SectionHead from "@/components/SectionHead/SectionHead";
+import { institutes } from "@/utils/institutes";
 import { FaGraduationCap } from "react-icons/fa";
 import EducationCard from "./EducationCard";
-const educations = [
-  {
-    degree: "B.Sc. in Engineering",
-    duration: "2021—Present",
-    institute: "Dhaka International University-DIU",
-    department: "Computer Science & Engineering",
-    description:
-      "I am pursuing a Bachelor's degree in CSE at DIU with a strong foundation of coding and problem-solving skills. I am highly motivated to explore the vast realm of computer science and self-discover new possibilities.",
-  },
-  {
-    degree: "Diploma in Engineering",
-    duration: "2015—2019",
-    institute: "Institute of Information Technology Bogura",
-    department: "Computer Technology",
-    description:
-      "Received a Diploma in Computer Technology from the Institute. Acquired basic hands-on experience in computer hardware, software development, and networking. Equipped with a solid foundation to excel in the dynamic field of technology.",
-  },
-  {
-    degree: "Secondary School Certificate",
-    duration: "2013—2015",
-    institute: "Patillakura Chakdaria B.L High School",
-    department: "Science",
-    description:
-      "This place holds all of my precious childhood memories. It's like a treasure chest filled with nostalgia.",
-  },
-];
 
 const Education = () => {
   return (
     <div id="education" className="md:pt-20 md:pb-0 pb-10">
       <SectionHead icon={FaGraduationCap} title="Education" />{" "}
       <MobileSectionHead icon={FaGraduationCap} title="Education" />
-      {educations.map((edu) => (
+      {institutes.map((edu) => (
         <EducationCard key={edu?.institute} educationDetails={edu} />
       ))}
     </div>

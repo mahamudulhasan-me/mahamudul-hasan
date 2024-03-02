@@ -7,12 +7,11 @@ import { FiExternalLink } from "react-icons/fi";
 import ExperienceCard from "./ExperienceCard";
 
 const Experience = () => {
-  const experience = industries;
   return (
     <div id="experience" className="md:pt-20 md:pb-0 pb-10  space-y-3">
       <SectionHead icon={FaCode} title="Where I’ve Worked" />
       <MobileSectionHead icon={FaCode} title="Where I’ve Worked" />
-      {experience.map((ind) => (
+      {industries.map((ind) => (
         <ExperienceCard key={ind.name} industriesDetails={ind} />
       ))}
 

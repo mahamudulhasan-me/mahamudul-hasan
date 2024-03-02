@@ -19,12 +19,12 @@ const MainPage = () => {
             <h1 className="md:text-5xl text-4xl text-slate-100 font-semibold font-sans">
               Mahamudul Hasan
             </h1>
-            <h3 className="text-2xl text-slate-100 mt-2 mb-3">
+            <h2 className="text-2xl text-slate-100 mt-2 mb-3">
               Web Application Developer
-            </h3>
+            </h2>
             <p className="text-slate-400">
-              I build pixel-perfect, engaging, and <br /> accessible digital
-              experiences.
+              I build pixel-perfect, engaging, and <br /> impactful front-end
+              digital experiences.
             </p>
             <Nav />
           </header>
