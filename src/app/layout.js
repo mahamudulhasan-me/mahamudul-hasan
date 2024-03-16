@@ -20,14 +20,14 @@ export default function RootLayout({ children }) {
         {/* <!-- Google tag (gtag.js) --> */}
         <Script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-NE3FMWGXXZ"
+          src="https://www.googletagmanager.com/gtag/js?id=G-N6SV9VSLK8"
         ></Script>
         <Script id="google-analytics">
           {` window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-NE3FMWGXXZ');`}
+  gtag('config', 'G-N6SV9VSLK8');`}
         </Script>
       </head>
       <body className={poppins.className}>{children}</body>
