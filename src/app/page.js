@@ -1,4 +1,5 @@
 import BackToTop from "@/components/BackToTop/BackToTop";
+import FbMessenger from "@/components/FbMessenger/FbMessenger";
 import Nav from "@/components/Nav/Nav";
 import SocialLink from "@/components/Nav/SocialLink";
 import About from "@/components/Sections/About/About";
@@ -41,6 +42,7 @@ const MainPage = () => {
         <Contact />
         <Footer />
       </div>
+      <FbMessenger />
       <BackToTop />
     </main>
   );
