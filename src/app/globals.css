@@ -170,3 +170,11 @@ html {
 .btn-getResume2:hover:before {
   transform: translateX(15em);
 }
+/* --------------------------- */
+idth: 60px;
+height: 60px;
+background-color: #64ffda;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 60px;
