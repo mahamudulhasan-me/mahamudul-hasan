@@ -27,7 +27,7 @@ const BackToTop = () => {
 
   return (
     <div
-      className={`fixed  right-10  cursor-pointer transition-all duration-500 w-10 h-10 rounded-full  flex justify-center items-center  text-teal-400 z-50 ${
+      className={`fixed  right-8  cursor-pointer transition-all duration-500 w-10 h-10 rounded-full  flex justify-center items-center  text-teal-400 z-50 ${
         isVisible ? "bottom-20" : "-bottom-20"
       }`}
       onClick={scrollToTop}

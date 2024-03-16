@@ -7,7 +7,7 @@ const FbMessenger = () => {
       <CustomChat
         pageId="1625755791026936"
         minimized={false}
-        themeColor="#64ffda"
+        themeColor="#0a192f"
       />
     </FacebookProvider>
   );
