@@ -1,7 +1,6 @@
 import Tag from "@/components/Tag/Tag";
 import Link from "next/link";
 import { MdOutlineArrowRight } from "react-icons/md";
-import { RxArrowTopRight } from "react-icons/rx";
 const ExperienceCard = ({ industriesDetails }) => {
   const { duration, role, name, link, jobType, address, duties, skills } =
     industriesDetails;
@@ -12,9 +11,9 @@ const ExperienceCard = ({ industriesDetails }) => {
         <h1 className="text-xl text-slate-200 flex items-center gap-2  transition-all group-hover:text-green ">
           <span className="hovered-text2"> {role} </span>
 
-          <span className=" group-hover:translate-x-1 group-hover:mb-2 transition-all">
+          {/* <span className=" group-hover:translate-x-1 group-hover:mb-2 transition-all">
             <RxArrowTopRight />
-          </span>
+          </span> */}
         </h1>
         <Link href={link} target="_blank" rel="noopener noreferrer">
           {name}

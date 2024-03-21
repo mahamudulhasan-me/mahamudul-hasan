@@ -15,6 +15,11 @@ const ProjectsArchive = () => {
           All Projects
         </h1>
       </div>
+      <main>
+        <h2 className="text-3xl text-slate-100 font-semibold font-sans mt-10">
+          Project Archive coming sooooooon!
+        </h2>
+      </main>
     </div>
   );
 };
