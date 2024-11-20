@@ -3,8 +3,10 @@ export const industries = [
     name: "Sundarban Courier Service (Pvt.) Ltd.",
     link: "https://sundarban.com.bd/",
     role: "Frontend Developer",
-    jobType: "On-Site",
-    duration: "Sep, 23 — Present",
+    jobType: "Onsite",
+    start: "2023-09-01",
+    end: "Present",
+
     address: "Uttara, Dhaka-1230",
     duties: [
       "Develop responsive and visually engaging web interfaces using React and NextJs.",
@@ -12,13 +14,14 @@ export const industries = [
       "Convert Figma, PSD to pixel perfect web pages.",
     ],
     skills: [
-      "TailwindCSS",
       "TypeScript",
-      "Next.js",
       "React",
-      "MUI",
-      "GraphQL",
+      "Next.js",
       "Apollo",
+      "GraphQL",
+      "TailwindCSS",
+      "MUI",
+      "Shadcn UI",
     ],
   },
   {
@@ -26,7 +29,8 @@ export const industries = [
     link: "https://robatosystems.com/",
     role: "MERN Stack Developer",
     jobType: "Remote",
-    duration: "July, 23 — Sep, 23",
+    start: "2023-07-02",
+    end: "2023-09-01",
     address: "Nodia, Uttar Pradesh, India",
     duties: [
       "Building user interfaces and implementing designs using React, and Next.js.",

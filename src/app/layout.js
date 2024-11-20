@@ -1,3 +1,4 @@
+import { Spotlight } from "@/components/motion-ui/Spotlight";
 import { Poppins } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
@@ -30,7 +31,19 @@ export default function RootLayout({ children }) {
   gtag('config', 'G-N6SV9VSLK8');`}
         </Script>
       </head>
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        <Spotlight
+          className=" blur-3xl pointer-events-none"
+          size={300}
+          springOptions={{
+            bounce: 0.3,
+            duration: 0.1,
+            width: 0.5,
+          }}
+        />
+
+        {children}
+      </body>
     </html>
   );
 }

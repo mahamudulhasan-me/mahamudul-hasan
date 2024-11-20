@@ -16,6 +16,13 @@
 body {
   background-color: #0a192f;
   -webkit-font-smoothing: antialiased;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; /* Ensure vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; /* Optional for smoother scrolling */
 }
 /* Scrollbar Styles */
 html {
@@ -93,7 +100,7 @@ html {
   position: relative;
   display: inline-block;
   cursor: pointer;
-  color: #64ffda;
+  color: #e2e8f0;
   transition: border-bottom 0.3s ease; /* Transition for border-bottom */
 }
 

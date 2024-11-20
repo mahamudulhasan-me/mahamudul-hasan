@@ -12,8 +12,8 @@ import Projects from "@/components/Sections/Projects/Projects";
 
 const MainPage = () => {
   return (
-    <main className="w-full relative container mx-auto md:px-[8%] px-4 md:grid grid-cols-12 justify-between items-start">
-      <div className="col-span-6 md:px-0 px-4 md:h-[calc(100vh-160px)] relative ">
+    <main className="w-full relative container mx-auto md:px-10  px-4 md:grid grid-cols-12 justify-between items-start">
+      <div className="col-span-5 md:px-0 px-4 md:h-[calc(100vh-160px)] relative ">
         <div className="md:fixed flex flex-col md:justify-between pt-20 pb-14  h-full  md:space-y-4 ">
           <header>
             <p className="text-green">Hi, my name is</p>
@@ -34,7 +34,7 @@ const MainPage = () => {
           </div>
         </div>
       </div>
-      <div className="col-span-6">
+      <div className="ml-10 col-span-7">
         <About />
         <Experience />
         <Projects />

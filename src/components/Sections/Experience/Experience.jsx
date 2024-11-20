@@ -1,3 +1,4 @@
+import { TextShimmer } from "@/components/motion-ui/TextShimmer";
 import MobileSectionHead from "@/components/SectionHead/MobileSectionHead";
 import SectionHead from "@/components/SectionHead/SectionHead";
 import { industries } from "@/utils/industries";
@@ -14,6 +15,7 @@ const Experience = () => {
       {industries.map((ind) => (
         <ExperienceCard key={ind.name} industriesDetails={ind} />
       ))}
+
       <Link
         href={"Mahmudul's_Resume.pdf"}
         target="_blank"
@@ -21,7 +23,13 @@ const Experience = () => {
         aria-label="Resume Link"
         className="ml-4 w-fit text-slate-100 hover:text-teal-400 transition-all flex items-center gap-2 group font-semibold"
       >
-        <p className="hovered-text2">View Full Resume</p>
+        <TextShimmer
+          duration={1.2}
+          className="hovered-text2 [--base-color:theme(colors.blue.600)] [--base-gradient-color:theme(colors.blue.200)] dark:[--base-color:theme(colors.white)] dark:[--base-gradient-color:theme(colors.teal.400)]"
+        >
+          View Full Resume
+        </TextShimmer>
+
         <span className="text-xl group-hover:translate-x-1  transition-all">
           <GoArrowRight />
         </span>
