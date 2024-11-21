@@ -34,7 +34,7 @@ const MainPage = () => {
           </div>
         </div>
       </div>
-      <div className="ml-10 col-span-7">
+      <div className="md:ml-10 col-span-7">
         <About />
         <Experience />
         <Projects />
