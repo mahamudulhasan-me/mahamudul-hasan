@@ -1,10 +1,54 @@
 export const projects = [
   {
+    id: 5,
+    isTranslate: true,
+    name: "AutoCare",
+    title: " Car Washing Services",
+    description:
+      "AutoCare is a user-friendly web application for booking car wash services online. Users can browse services, view details, and book appointments seamlessly, while administrators manage services, slots, and users through a dedicated dashboard. The platform is designed for efficiency, security, and a great user experience. Admin Credentials. E-mail: mahamudulhasan.org@gmail.com. Password: Mdun@626456. User Credentials. E-mail: mahmud@autocare.com. Password: User@626456",
+    cover: "/images/autocare/cover.jpeg",
+    images: [
+      "/images/travel-tales/loginPage.png",
+      "/images/travel-tales/homePage-1.png",
+      "/images/travel-tales/homePage-2.png",
+      "/images/travel-tales/post.png",
+      "/images/travel-tales/profile.png",
+      "/images/travel-tales/payment.png",
+      "/images/travel-tales/payment complete.png",
+      "/images/travel-tales/dashboard.png",
+    ],
+    technologies: [
+      "TypeScript",
+      "React",
+      "Redux",
+      "TailwindCSS",
+      "Ant Design",
+      "Framer Motion",
+      "JWT",
+      "REST API's",
+      "Payment Gateway",
+      "Express.js",
+      "MongoDB",
+    ],
+    features: [
+      "Service Booking: Easy-to-use interface for selecting and booking car wash services.",
+      "User Authentication: Secure login, signup, and role-based access.",
+      "Admin Dashboard: Manage services, slots, and users effectively.",
+      "Payment Integration: Process payments securely using Aamarpay.",
+      "Responsive Design: Optimized for desktop and mobile devices.",
+      "Dynamic Reviews: Users can rate and review services with real-time updates.",
+    ],
+    liveLink: "https://autocare-client.vercel.app/",
+    clientCode: "https://github.com/mahamudulhasan-me/travel-tales",
+    serverCde: "https://github.com/mahamudulhasan-me/car-washing-system",
+  },
+  {
     id: 4,
+    isTranslate: false,
     name: "Travel Tales",
     title: "Travel Tips & Destination Guides",
     description:
-      "Welcome to Travel Tales, a dynamic platform designed for travel enthusiasts to share their stories, exchange valuable tips, and connect with fellow travelers! 🌍✈️ With user authentication, social features, and premium content access, this app offers a vibrant community experience where travelers can discover and contribute travel guides, tips, and experiences. Whether you're looking for your next adventure or sharing your latest one, Travel Tales has you covered. Admin-email: mahmud@traveltales.com,. Password: Mdun@626456",
+      "Travel Tales is a platform for travelers to share their stories, connect with others, and discover exciting travel tips and guides. With user-friendly features like secure login, personalized profiles, premium content, and admin controls, it creates a vibrant community for travel enthusiasts. Admin-email: mahmud@traveltales.com,. Password: Mdun@626456",
     cover: "/images/travel-tales/homePage-1.png",
     images: [
       "/images/travel-tales/loginPage.png",
@@ -32,19 +76,21 @@ export const projects = [
       "MongoDB",
     ],
     features: [
-      "User Registration & Authentication: Secure user login and registration via JWT.",
-      "Personalized Profiles: Share stories, update profiles, and connect with others.",
+      "User Registration & Login: Secure user login and registration via JWT.",
+      "Personalized Profiles: Share stories, update profiles and connect with others.",
       "Rich Text Editor: Create detailed travel guides with formatting and media attachments.",
       "Upvotes & Comments: Discover popular posts and engage with the community through votes and comments.",
       "Premium Content: Verified users can access exclusive travel guides and tips.",
-      "Payment Integration: Pay for premium content and verification using Stripe or Aamarpay.",
+      "Payment Integration: Pay for premium content and verification using Aamarpay",
       "Dynamic News Feed: Infinite scrolling, upvotes, and sorting to highlight the best content.",
+      "Admin Dashboard: Manage all users, view payment and post statistics, and handle user accounts and posts effectively.",
     ],
     liveLink: "https://travel-tales-client.vercel.app/",
     clientCode: "https://github.com/mahamudulhasan-me/travel-tales",
   },
   {
     id: 1,
+    isTranslate: true,
     name: "Dance School",
     title: "Summer Camp School",
     description:
@@ -81,6 +127,7 @@ export const projects = [
   },
   {
     id: 2,
+    isTranslate: true,
     name: "Toy Town",
     title: "Toy Product E-commerce",
     description:
@@ -115,6 +162,7 @@ export const projects = [
   },
   {
     id: 3,
+    isTranslate: true,
     name: "Cook and Yummy",
     title: "Chefs and Yummy Recipe",
     description:

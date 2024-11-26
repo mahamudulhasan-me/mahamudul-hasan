@@ -8,6 +8,7 @@ import { RxArrowTopRight } from "react-icons/rx";
 const ProjectCardInner = ({ projectDetails, setShowModal }) => {
   const {
     name,
+    isTranslate,
     title,
     description,
     cover,
@@ -17,17 +18,32 @@ const ProjectCardInner = ({ projectDetails, setShowModal }) => {
   } = projectDetails;
   return (
     <div className="flex md:flex-row flex-col items-start  gap-6 text-slate-300 group hover:bg-navy-light p-4 rounded-md transition-all  hover:ease-in-out ease-linear  lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg">
-      <div className="md:w-[35%]">
-        <figure className="w-full h-full border-2 rounded-md border-slate-700 group-hover:border-slate-600">
-          <Image
-            src={cover} // Access the first image path from the images array
-            width={250}
-            height={250}
-            alt="image"
-            className="w-full h-full object-cover rounded-md"
-          />
-        </figure>
-      </div>
+      {isTranslate ? (
+        <div className="md:w-[35%] h-[6.5rem] duration-1000 hover:duration-[3000ms] group-hover:h-[17rem]  border-2 rounded-md border-slate-700 group-hover:border-slate-600 overflow-hidden">
+          <figure className="w-full duration-[3000ms] transition-transform ease-linear transform translate-y-0 group-hover:-translate-y-[calc(100%-17rem)]">
+            <Image
+              src={cover}
+              width={250}
+              height={250}
+              alt="image"
+              className="w-full h-full object-cover rounded-md"
+            />
+          </figure>
+        </div>
+      ) : (
+        <div className="md:w-[35%]">
+          <figure className="w-full h-full border-2 rounded-md border-slate-700 group-hover:border-slate-600">
+            <Image
+              src={cover} // Access the first image path from the images array
+              width={250}
+              height={250}
+              alt="image"
+              className="w-full h-full object-cover rounded-md"
+            />
+          </figure>
+        </div>
+      )}
+
       <div className="md:w-[60%]">
         <Link
           href={liveLink}

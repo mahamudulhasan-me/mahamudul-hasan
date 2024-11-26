@@ -4,7 +4,8 @@ import { FaGithub } from "react-icons/fa";
 import { LuExternalLink } from "react-icons/lu";
 // ProjectDetailsModal.js
 import Link from "next/link";
-import { MdClose, MdOutlineCheck } from "react-icons/md";
+import { GoDash } from "react-icons/go";
+import { MdClose } from "react-icons/md";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 const ProjectDetailsModal = ({ projectDetails, setShowModal }) => {
@@ -54,14 +55,17 @@ const ProjectDetailsModal = ({ projectDetails, setShowModal }) => {
             </div>
             <div>
               <h3 className="text-slate-light font-semibold mb-2 border-b w-fit border-dashed border-slate-600">
-                Features:
+                Key Features:
               </h3>
               {features.map((feature, index) => (
                 <p
                   key={index}
-                  className="text-slate-300 flex items-center gap-1 text-sm"
+                  className="text-slate-300 flex items-start gap-2 text-sm mb-1"
                 >
-                  <MdOutlineCheck /> {feature}
+                  <span className="flex-shrink-0">
+                    <GoDash className="w-4 h-4 text-green-400" />
+                  </span>
+                  {feature}
                 </p>
               ))}
             </div>

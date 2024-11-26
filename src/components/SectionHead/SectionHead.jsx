@@ -14,7 +14,7 @@ const SectionHead = ({ icon: Icon, title }) => {
         },
       }}
       transition={{ duration: 0.3, ease: "easeInOut" }}
-      viewOptions={{ margin: "0px 0px -350px 0px" }}
+      viewOptions={{ margin: "0px 0px -50px 0px" }}
     >
       {" "}
       <div className="hidden md:flex text-slate-200  items-center gap-2 mb-8 pl-4 text-2xl">
