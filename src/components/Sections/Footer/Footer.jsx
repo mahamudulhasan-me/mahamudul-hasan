@@ -2,7 +2,7 @@ import Link from "next/link";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="text-slate-400 text-sm md:pb-14 pb-10">
+    <footer className="text-slate-400 md:px-0 px-4 text-sm md:pb-14 pb-10">
       Design inspired by <span className="hovered-text">Brittany Chiang</span>,
       developed by{" "}
       <Link

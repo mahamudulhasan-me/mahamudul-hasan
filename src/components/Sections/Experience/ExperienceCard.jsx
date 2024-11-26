@@ -18,7 +18,7 @@ const ExperienceCard = ({ industriesDetails }) => {
     >
       {" "}
       <div className="flex md:flex-row flex-col items-start justify-between  md:gap-2 text-slate-300 group   hover:ease-in-out ease-linear hover:bg-navy-light p-4 rounded-md transition-all   hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg">
-        <aside className="w-[40%] flex flex-col items-center">
+        <aside className="md:w-[40%] w-full flex md:flex-col flex-row items-center justify-between">
           {" "}
           <p className="uppercase text-sm mt-1">
             {formatDateRange(start, end)}

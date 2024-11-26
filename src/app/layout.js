@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={poppins.className}>
         <Spotlight
-          className=" blur-3xl pointer-events-none"
+          className="blur-3xl pointer-events-none"
           size={300}
           springOptions={{
             bounce: 0.3,

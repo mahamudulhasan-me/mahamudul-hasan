@@ -12,7 +12,7 @@ import Projects from "@/components/Sections/Projects/Projects";
 
 const MainPage = () => {
   return (
-    <main className="w-full relative container mx-auto md:px-10  px-4 md:grid grid-cols-12 justify-between items-start">
+    <main className="w-full relative container mx-auto md:px-10  md:grid grid-cols-12 justify-between items-start">
       <div className="col-span-5 md:px-0 px-4 md:h-[calc(100vh-160px)] relative ">
         <div className="md:fixed flex flex-col md:justify-between pt-20 pb-14  h-full  md:space-y-4 ">
           <header>
