@@ -6,7 +6,7 @@ export const projects = [
     title: " Car Washing Services",
     description:
       "AutoCare is a user-friendly web application for booking car wash services online. Users can browse services, view details, and book appointments seamlessly, while administrators manage services, slots, and users through a dedicated dashboard. The platform is designed for efficiency, security, and a great user experience. Admin Credentials. E-mail: mahamudulhasan.org@gmail.com. Password: Mdun@626456. User Credentials. E-mail: mahmud@autocare.com. Password: User@626456",
-    cover: "/images/autocare/cover.jpeg",
+    cover: "/images/autoCare/cover.jpeg",
     images: [
       "/images/travel-tales/loginPage.png",
       "/images/travel-tales/homePage-1.png",
