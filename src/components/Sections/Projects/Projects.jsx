@@ -9,11 +9,8 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
   return (
     <section id="projects" className="md:pt-20 md:pb-0 pb-10 space-y-3">
-      <SectionHead icon={FaProjectDiagram} title="Projects I've Completed" />
-      <MobileSectionHead
-        icon={FaProjectDiagram}
-        title="Projects I've Completed"
-      />
+      <SectionHead icon={FaProjectDiagram} title="Featured Projects" />
+      <MobileSectionHead icon={FaProjectDiagram} title="Featured Projects" />
 
       {projects.map((project) => (
         <ProjectCard key={project.id} projectDetails={project} />

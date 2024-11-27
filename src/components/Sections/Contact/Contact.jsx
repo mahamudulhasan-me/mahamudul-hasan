@@ -7,8 +7,11 @@ import Email from "./Email";
 const Contact = () => {
   return (
     <div id="contact" className="md:py-20 mb-10 md:mb-0">
-      <SectionHead icon={RiContactsBookFill} title="Contact Info" />
-      <MobileSectionHead icon={RiContactsBookFill} title="Contact Info" />
+      <SectionHead icon={RiContactsBookFill} title="Let's Make It Happen" />
+      <MobileSectionHead
+        icon={RiContactsBookFill}
+        title="Let's Make It Happen"
+      />
       <InView
         variants={{
           hidden: { opacity: 0, y: 100, filter: "blur(4px)" },

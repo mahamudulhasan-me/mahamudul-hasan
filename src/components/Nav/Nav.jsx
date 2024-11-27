@@ -12,6 +12,10 @@ const navItems = [
     to: "experience",
   },
   {
+    name: "Skill",
+    to: "skill",
+  },
+  {
     name: "Projects",
     to: "projects",
   },

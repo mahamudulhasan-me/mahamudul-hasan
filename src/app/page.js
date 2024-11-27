@@ -9,6 +9,7 @@ import Education from "@/components/Sections/Education/Education";
 import Experience from "@/components/Sections/Experience/Experience";
 import Footer from "@/components/Sections/Footer/Footer";
 import Projects from "@/components/Sections/Projects/Projects";
+import SkillSection from "@/components/Sections/Skills";
 
 const MainPage = () => {
   return (
@@ -37,6 +38,7 @@ const MainPage = () => {
       <div className="md:ml-10 col-span-7">
         <About />
         <Experience />
+        <SkillSection />
         <Projects />
         <Education />
         <Contact />

@@ -3,15 +3,15 @@ import MobileSectionHead from "@/components/SectionHead/MobileSectionHead";
 import SectionHead from "@/components/SectionHead/SectionHead";
 import { industries } from "@/utils/industries";
 import Link from "next/link";
-import { FaCode } from "react-icons/fa6";
+import { FaUserTie } from "react-icons/fa";
 import { GoArrowRight } from "react-icons/go";
 import ExperienceCard from "./ExperienceCard";
 
 const Experience = () => {
   return (
     <div id="experience" className="md:pt-20 md:pb-0 pb-10  space-y-3">
-      <SectionHead icon={FaCode} title="Where I’ve Worked" />
-      <MobileSectionHead icon={FaCode} title="Where I’ve Worked" />
+      <SectionHead icon={FaUserTie} title="Professional Journey" />
+      <MobileSectionHead icon={FaUserTie} title="Professional Journey" />
       {industries.map((ind) => (
         <ExperienceCard key={ind.name} industriesDetails={ind} />
       ))}

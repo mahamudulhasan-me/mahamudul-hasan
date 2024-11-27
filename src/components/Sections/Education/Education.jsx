@@ -7,8 +7,8 @@ import EducationCard from "./EducationCard";
 const Education = () => {
   return (
     <div id="education" className="md:pt-20 md:pb-0 pb-10">
-      <SectionHead icon={FaGraduationCap} title="Education" />{" "}
-      <MobileSectionHead icon={FaGraduationCap} title="Education" />
+      <SectionHead icon={FaGraduationCap} title="Academic Background" />{" "}
+      <MobileSectionHead icon={FaGraduationCap} title="Academic Background" />
       {institutes.map((edu) => (
         <EducationCard key={edu?.institute} educationDetails={edu} />
       ))}
