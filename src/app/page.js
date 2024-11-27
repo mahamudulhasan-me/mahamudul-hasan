@@ -25,7 +25,7 @@ const MainPage = () => {
             <h2 className="text-2xl text-slate-100 mt-2 mb-3">
               Web Application Developer
             </h2>
-            <h6 className="inline-flex whitespace-pre-wrap text-slate-400">
+            <h6 className=" inline-block overflow-hidden text-slate-400">
               I build{" "}
               <TextLoop
                 interval={4}
