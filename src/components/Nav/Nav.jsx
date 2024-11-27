@@ -8,12 +8,12 @@ const navItems = [
     to: "about",
   },
   {
-    name: "Experience",
-    to: "experience",
-  },
-  {
     name: "Skill",
     to: "skill",
+  },
+  {
+    name: "Experience",
+    to: "experience",
   },
   {
     name: "Projects",

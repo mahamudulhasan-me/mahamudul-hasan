@@ -1,5 +1,6 @@
 import BackToTop from "@/components/BackToTop/BackToTop";
 import FbMessenger from "@/components/FbMessenger/FbMessenger";
+import { TextLoop } from "@/components/motion-ui/TextLoop";
 import Nav from "@/components/Nav/Nav";
 import SocialLink from "@/components/Nav/SocialLink";
 import About from "@/components/Sections/About/About";
@@ -24,10 +25,50 @@ const MainPage = () => {
             <h2 className="text-2xl text-slate-100 mt-2 mb-3">
               Web Application Developer
             </h2>
-            <p className="text-slate-400">
-              I build pixel-perfect, engaging, and <br /> impactful front-end
-              digital experiences.
-            </p>
+            <h6 className="inline-flex whitespace-pre-wrap text-slate-400">
+              I build{" "}
+              <TextLoop
+                interval={4}
+                className="overflow-y-clip"
+                transition={{
+                  type: "spring",
+                  stiffness: 900,
+                  damping: 80,
+                  mass: 10,
+                }}
+                variants={{
+                  initial: {
+                    y: 20,
+                    rotateX: 90,
+                    opacity: 0,
+                    filter: "blur(4px)",
+                  },
+                  animate: {
+                    y: 0,
+                    rotateX: 0,
+                    opacity: 1,
+                    filter: "blur(0px)",
+                  },
+                  exit: {
+                    y: -20,
+                    rotateX: -90,
+                    opacity: 0,
+                    filter: "blur(4px)",
+                  },
+                }}
+              >
+                <span>pixel-perfect, engaging, and</span>
+                <span>impactful front-end digital experiences.</span>
+                <span>high-performance, scalable web applications.</span>
+                <span>intuitive and interactive user interfaces.</span>
+                <span>next-gen solutions with MERN stack expertise.</span>
+                <span>cutting-edge tools and technologies for the web.</span>
+                <span>seamless experiences that inspire users.</span>
+                <span>clean, maintainable, and efficient codebases.</span>
+                <span>robust back-end systems with GraphQL APIs.</span>
+                <span>dynamic and responsive digital landscapes.</span>
+              </TextLoop>
+            </h6>
             <Nav />
           </header>
           <div className="mb-5 md:mt-0 mt-5 flex items-center space-x-6">
@@ -37,8 +78,8 @@ const MainPage = () => {
       </div>
       <div className="md:ml-10 col-span-7">
         <About />
-        <Experience />
         <SkillSection />
+        <Experience />
         <Projects />
         <Education />
         <Contact />

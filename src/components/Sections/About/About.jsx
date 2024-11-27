@@ -1,8 +1,5 @@
-import { TextEffect } from "@/components/motion-ui/TextEffect";
-import { TextShimmer } from "@/components/motion-ui/TextShimmer";
 import MobileSectionHead from "@/components/SectionHead/MobileSectionHead";
 import { FcAbout } from "react-icons/fc";
-import { MdArrowRight } from "react-icons/md";
 
 const skills = [
   "TypeScript",
@@ -43,95 +40,10 @@ const About = () => {
         <p>
           Currently, I&apos;m a{" "}
           <span className="hovered-text">MERN stack developer</span> with a{" "}
-          <span className="hovered-text">
-            strong focus on front-end development
-          </span>
-          . At <span className="hovered-text">Sundarban Courier Service</span>,
-          I work on building user interfaces that align with business goals
-          while delivering exceptional performance and usability.
-        </p>
-
-        <TextShimmer
-          duration={3}
-          className="border-b border-slate-600 border-dashed"
-        >
-          Technologies I&apos;ve been honing my skills in recently:
-        </TextShimmer>
-
-        <div className="w-3/4 grid grid-cols-2  gap-x-4 justify-between">
-          {skills.map((skill) => (
-            <div key={skill} className="flex items-center">
-              <MdArrowRight className="text-green text-xl" />
-              <TextEffect
-                per="line"
-                as="p"
-                segmentWrapperClassName="overflow-hidden block hovered-text pl-2"
-                variants={{
-                  container: {
-                    hidden: { opacity: 0 },
-                    visible: {
-                      opacity: 1,
-                      transition: { staggerChildren: 0.2 },
-                    },
-                  },
-                  item: {
-                    hidden: { opacity: 0, y: 40 },
-                    visible: {
-                      opacity: 1,
-                      y: 0,
-                      transition: { duration: 0.4 },
-                    },
-                  },
-                }}
-              >
-                {skill}
-              </TextEffect>
-            </div>
-          ))}
-        </div>
-
-        <TextShimmer
-          duration={2}
-          className="border-b border-slate-600 border-dashed"
-        >
-          Other tools and technologies I&apos;ve worked with:
-        </TextShimmer>
-
-        <div className="w-3/4 grid grid-cols-2 gap-y-3 gap-x-4 justify-between">
-          {othersSkills.map((skill) => (
-            <div key={skill} className="flex items-center">
-              <MdArrowRight className="text-green text-xl" />
-              <TextEffect
-                per="line"
-                as="p"
-                segmentWrapperClassName="overflow-hidden block hovered-text pl-2"
-                variants={{
-                  container: {
-                    hidden: { opacity: 0 },
-                    visible: {
-                      opacity: 1,
-                      transition: { staggerChildren: 0.2 },
-                    },
-                  },
-                  item: {
-                    hidden: { opacity: 0, y: 40 },
-                    visible: {
-                      opacity: 1,
-                      y: 0,
-                      transition: { duration: 0.4 },
-                    },
-                  },
-                }}
-              >
-                {skill}
-              </TextEffect>
-            </div>
-          ))}
-        </div>
-        <p>
-          I&apos;m excited to leverage my expertise and passion to deliver
-          impactful solutions that resonate with users and push the boundaries
-          of what&apos;s possible in the digital space.
+          strong focus on front-end development . At{" "}
+          <span className="hovered-text">Sundarban Courier Service</span>, I
+          work on building user interfaces that align with business goals while
+          delivering exceptional performance and usability.
         </p>
         <p>
           Beyond professional projects, I enjoy pushing boundaries and tackling

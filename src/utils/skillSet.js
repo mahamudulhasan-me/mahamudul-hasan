@@ -1,5 +1,5 @@
 import { BiLogoTypescript } from "react-icons/bi";
-import { FaCss3Alt, FaDocker, FaGitAlt, FaReact } from "react-icons/fa";
+import { FaCss3Alt, FaDocker, FaGitAlt, FaReact, FaSass } from "react-icons/fa";
 import { FaNodeJs, FaStarOfLife } from "react-icons/fa6";
 import { GiJesterHat } from "react-icons/gi";
 import { GrGraphQl } from "react-icons/gr";
@@ -50,13 +50,18 @@ export const skillSet = [
         icon: FaCss3Alt,
       },
       {
-        name: "Framer Motion",
-        icon: TbBrandFramerMotion,
+        name: "Sass",
+        icon: FaSass,
       },
       {
         name: "Ant Design",
         icon: SiAntdesign,
       },
+      {
+        name: "Framer Motion",
+        icon: TbBrandFramerMotion,
+      },
+
       {
         name: "Radix UI",
         icon: SiRadixui,
