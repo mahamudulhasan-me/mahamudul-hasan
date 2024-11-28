@@ -10,8 +10,10 @@ export const industries = [
     address: "Uttara, Dhaka-1230",
     duties: [
       "Develop responsive and visually engaging web interfaces using React and NextJs.",
-      "Collaborated with back-end developers to integrate front-end and server-side components.",
-      "Convert Figma, PSD to pixel perfect web pages.",
+      "Analyzing customer and party requirements, researching, and creating the best front-end solutions.",
+      "Addressing real-world challenges with practical, efficient designs that improve user experience.",
+      "Designing and implementing complex dashboards that are both functional and easy to use.",
+      "Collaborating closely with back-end developers to ensure smooth integration between front-end and server-side components.",
     ],
     skills: [
       "TypeScript",
@@ -22,6 +24,7 @@ export const industries = [
       "TailwindCSS",
       "MUI",
       "Shadcn UI",
+      "Team Work",
     ],
   },
   {
@@ -33,16 +36,16 @@ export const industries = [
     end: "2023-09-01",
     address: "Nodia, Uttar Pradesh, India",
     duties: [
-      "Building user interfaces and implementing designs using React, and Next.js.",
-      "Developing server-side logic and APIs using  Express.js, and working with MongoDB.",
+      "Developed responsive and user-friendly interfaces for web applications.",
+      "Developing server-side logic and APIs using  Express.js, and working with Mongoose.",
       "Integrating front-end and back-end components to create full-stack applications that meet project requirements.",
       "Working closely with senior developers, designers, and project managers to understand requirements and contribute to project development.",
     ],
     skills: [
-      "TailwindCSS",
       "JavaScript",
       "Next.js",
       "React",
+      "TailwindCSS",
       "RESTful APIs",
       "JWT",
       "Express.js",
