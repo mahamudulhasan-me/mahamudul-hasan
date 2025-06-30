@@ -17,6 +17,9 @@ module.exports = {
           dark: "#0a192f",
         },
       },
+      fontFamily: {
+        bangla: ["BanglaUnicode", "sans-serif"], // You can rename 'bangla' if needed
+      },
     },
   },
   plugins: [],

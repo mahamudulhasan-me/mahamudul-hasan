@@ -1,7 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Noto Sans Bengali", sans-serif;
+}
+
 /* global.css or tailwind.config.js */
+@font-face {
+  font-family: "BanglaUnicode";
+  src: url("/font/bangla-font.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @layer utilities {
   .no-scrollbar::-webkit-scrollbar {
     display: none;
@@ -176,4 +189,14 @@ html {
 
 .btn-getResume2:hover:before {
   transform: translateX(15em);
+}
+
+.bio-element {
+  @apply grid grid-cols-2 items-center   divide-x divide-navy-lightest justify-center;
+}
+.bio-label {
+  @apply font-medium px-4 py-2 text-center text-slate-200;
+}
+.bio-value {
+  @apply px-4 py-2 text-start text-slate-300;
 }
