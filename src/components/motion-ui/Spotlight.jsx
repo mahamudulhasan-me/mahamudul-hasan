@@ -3,11 +3,7 @@ import { cn } from "@/lib/utils";
 import { motion, useSpring, useTransform } from "framer-motion";
 import { useCallback, useEffect, useRef, useState } from "react";
 
-export function Spotlight({
-  className,
-  size = 200,
-  springOptions = { bounce: 0 },
-}) {
+function Spotlight({ className, size = 200, springOptions = { bounce: 0 } }) {
   const containerRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
   const [parentElement, setParentElement] = useState(null);
@@ -73,3 +69,5 @@ export function Spotlight({
     />
   );
 }
+
+export default Spotlight;
