@@ -3,12 +3,13 @@ import { GoArrowLeft } from "react-icons/go";
 import Address from "./_components/Address";
 import ContactInfo from "./_components/ContactInfo";
 import EducationalInfo from "./_components/EducationalInfo";
+import ExpectedPartnerInfo from "./_components/expectedPartnerInfo";
 import FamilyInfo from "./_components/FamilyInfo";
+import MarriageInfo from "./_components/MarriageInfo";
 import PersonalInfo from "./_components/PersonalInfo";
 import PersonalInfoOverview from "./_components/PersonalInfoOverview";
 import ProfessionalInfo from "./_components/ProfessionalInfo";
-import ExpectedPartnerInfo from "./_components/expectedPartnerInfo";
-import MarriageInfo from "./_components/marriageInfo";
+
 const BioData = () => {
   return (
     <div className="container mx-auto md:px-[8%] px-4 pt-20 font-bangla mb-5">
