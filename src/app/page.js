@@ -29,7 +29,7 @@ const MainPage = () => {
               I build{" "}
               <TextLoop
                 interval={4}
-                className="overflow-y-clip"
+                className="overflow-y-clip truncate"
                 transition={{
                   type: "spring",
                   stiffness: 900,

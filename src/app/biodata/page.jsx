@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { GoArrowLeft } from "react-icons/go";
 import Address from "./_components/Address";
+import ContactInfo from "./_components/ContactInfo";
 import EducationalInfo from "./_components/EducationalInfo";
 import FamilyInfo from "./_components/FamilyInfo";
 import PersonalInfo from "./_components/PersonalInfo";
@@ -20,10 +21,10 @@ const BioData = () => {
           Mahamudul Hasan
         </Link>
         <h1 className="text-3xl text-slate-100 font-semibold font-sans">
-          Bio-Data
+          Marriage Biodata
         </h1>
       </div>
-      <main className="grid grid-cols-12 mt-6 gap-8">
+      <main className="grid grid-cols-12 mt-10 gap-8">
         <PersonalInfoOverview />
         <aside className="lg:col-span-8 col-span-12 flex flex-col gap-8">
           <Address />
@@ -33,6 +34,7 @@ const BioData = () => {
           <ProfessionalInfo />
           <MarriageInfo />
           <ExpectedPartnerInfo />
+          <ContactInfo />
         </aside>
       </main>
     </div>
