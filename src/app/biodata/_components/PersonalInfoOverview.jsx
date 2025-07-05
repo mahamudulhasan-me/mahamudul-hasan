@@ -10,7 +10,7 @@ const PersonalInfoOverview = () => {
   ];
 
   return (
-    <aside className="lg:col-span-4 col-span-12 text-slate-300 group bg-navy-light p-4 rounded-md transition-all shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] drop-shadow-lg h-fit sticky top-2">
+    <aside className="lg:col-span-4 col-span-12 text-slate-300 group bg-navy-light p-4 rounded-md transition-all shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] drop-shadow-lg h-fit lg:sticky lg:top-2">
       <div className=""></div>
       <h1 className="text-center text-2xl text-slate-100 font-medium">
         Mahamudul Hasan

@@ -192,11 +192,11 @@ html {
 }
 
 .bio-element {
-  @apply grid grid-cols-2 items-center   divide-x divide-navy-lightest justify-center;
+  @apply flex items-stretch   divide-x divide-navy-lightest justify-center;
 }
 .bio-label {
-  @apply font-medium px-4 py-2 text-center text-slate-200;
+  @apply flex justify-center items-center font-medium w-1/2 px-4 py-2 text-center text-slate-200;
 }
 .bio-value {
-  @apply px-4 py-2 text-start text-slate-300 font-thin font-bangla;
+  @apply flex items-center justify-start px-4 py-2 w-1/2 text-start text-slate-300 font-thin font-bangla;
 }

@@ -5,6 +5,7 @@ import EducationalInfo from "./_components/EducationalInfo";
 import FamilyInfo from "./_components/FamilyInfo";
 import PersonalInfo from "./_components/PersonalInfo";
 import PersonalInfoOverview from "./_components/PersonalInfoOverview";
+import ProfessionalInfo from "./_components/ProfessionalInfo";
 const BioData = () => {
   return (
     <div className="container mx-auto md:px-[8%] px-4 pt-20 font-bangla mb-5">
@@ -27,6 +28,7 @@ const BioData = () => {
           <EducationalInfo />
           <FamilyInfo />
           <PersonalInfo />
+          <ProfessionalInfo />
         </aside>
       </main>
     </div>
