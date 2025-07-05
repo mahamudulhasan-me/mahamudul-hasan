@@ -6,6 +6,8 @@ import FamilyInfo from "./_components/FamilyInfo";
 import PersonalInfo from "./_components/PersonalInfo";
 import PersonalInfoOverview from "./_components/PersonalInfoOverview";
 import ProfessionalInfo from "./_components/ProfessionalInfo";
+import ExpectedPartnerInfo from "./_components/expectedPartnerInfo";
+import MarriageInfo from "./_components/marriageInfo";
 const BioData = () => {
   return (
     <div className="container mx-auto md:px-[8%] px-4 pt-20 font-bangla mb-5">
@@ -17,7 +19,7 @@ const BioData = () => {
           <GoArrowLeft className="group-hover:-translate-x-1 transition-all text-xl" />{" "}
           Mahamudul Hasan
         </Link>
-        <h1 className="text-5xl text-slate-100 font-semibold font-sans">
+        <h1 className="text-3xl text-slate-100 font-semibold font-sans">
           Bio-Data
         </h1>
       </div>
@@ -29,6 +31,8 @@ const BioData = () => {
           <FamilyInfo />
           <PersonalInfo />
           <ProfessionalInfo />
+          <MarriageInfo />
+          <ExpectedPartnerInfo />
         </aside>
       </main>
     </div>
