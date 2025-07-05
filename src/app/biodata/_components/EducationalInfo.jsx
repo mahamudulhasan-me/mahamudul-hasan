@@ -18,20 +18,20 @@ const educationInfo = [
   },
   {
     label: "Graduation Year",
-    value: "2025",
+    value: "2025 ",
   },
   {
     label: "SSC Passing Year",
-    value: "2015",
+    value: "2015 (Science)",
   },
-  {
-    label: "SSC Group",
-    value: "Science",
-  },
-  {
-    label: "SSC Result",
-    value: "A-",
-  },
+  // {
+  //   label: "SSC Group",
+  //   value: "Science",
+  // },
+  // {
+  //   label: "SSC Result",
+  //   value: "A-",
+  // },
   {
     label: "Post-SSC Education",
     value: "Diploma in Computer Technology",

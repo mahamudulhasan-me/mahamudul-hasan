@@ -198,5 +198,5 @@ html {
   @apply font-medium px-4 py-2 text-center text-slate-200;
 }
 .bio-value {
-  @apply px-4 py-2 text-start text-slate-300;
+  @apply px-4 py-2 text-start text-slate-300 font-thin font-bangla;
 }
