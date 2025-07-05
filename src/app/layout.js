@@ -1,7 +1,7 @@
+import { Analytics } from "@vercel/analytics/next";
 import { Poppins } from "next/font/google";
 import Script from "next/script";
 import "../components/motion-ui/Spotlight.jsx";
-
 import Spotlight from "../components/motion-ui/Spotlight.jsx";
 import "./globals.css";
 const poppins = Poppins({
@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
             width: 0.5,
           }}
         />
-
+        <Analytics />
         {children}
       </body>
     </html>
