@@ -16,20 +16,21 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const googleAnalyticsId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID;
   return (
     <html lang="en">
       <head>
         {/* <!-- Google tag (gtag.js) --> */}
         <Script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-N6SV9VSLK8"
+          src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
         ></Script>
         <Script id="google-analytics">
           {` window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-N6SV9VSLK8');`}
+  gtag('config', ${googleAnalyticsId});`}
         </Script>
       </head>
       <body className={poppins.className}>
