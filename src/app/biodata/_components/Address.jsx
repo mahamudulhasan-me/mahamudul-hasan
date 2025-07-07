@@ -3,26 +3,27 @@ import SectionContainer from "./SectionContainer";
 const Address = () => {
   return (
     <SectionContainer title="ঠিকানা">
-      <h6 className="bio-element ">
+      <h6 className="bio-element">
         <span className="bio-label">স্থায়ী ঠিকানা</span>
         <p className="bio-value">
-          <span> সাদুল্লাপুর, গাইবান্ধা, রংপুর, বাংলাদেশ</span> <br />
-          <span>
-            <strong>এলাকার নাম: </strong> পাতিল্লাকুড়া, বড় জামালপুর
-          </span>
+          গ্রাম: পাতিল্লাকুড়া, ইউনিয়ন: বড় জামালপুর, উপজেলা: সাদুল্লাপুর,
+          জেলা: গাইবান্ধা, বিভাগ: রংপুর, বাংলাদেশ।
         </p>
       </h6>
-      <h6 className="bio-element  bg-navy-light/20">
+
+      <h6 className="bio-element bg-navy-light/20">
         <span className="bio-label">বর্তমান ঠিকানা</span>
         <span className="bio-value">
-          সেক্টর - ১২, উত্তরা - ১২৩০, ঢাকা, বাংলাদেশ
+          সেক্টর-১২, উত্তরা, ঢাকা-১২৩০, বাংলাদেশ।
         </span>
       </h6>
-      <h6 className="bio-element ">
-        <span className="bio-label">বেড়ে ওঠা</span>
+
+      <h6 className="bio-element">
+        <span className="bio-label">শৈশব ও বেড়ে ওঠা</span>
         <span className="bio-value">
-          ক্লাস ১০ পর্যন্ত নিজ গ্রামে কাটিয়েছি। এরপর পড়াশোনার জন্য চার বছর
-          বগুড়ায় ছিলাম। বর্তমানে ঢাকায় থাকছি।
+          শৈশব ও স্কুলজীবন নিজ গ্রামেই কেটেছে। এসএসসি পর্যন্ত নিজ এলাকায়
+          পড়াশোনা করেছি। এরপর ডিপ্লোমা ইন ইঞ্জিনিয়ারিং অধ্যয়নের জন্য চার বছর
+          বগুড়ায় ছিলাম। বর্তমানে ঢাকায় থাকছি ও কর্মরত আছি।
         </span>
       </h6>
     </SectionContainer>
