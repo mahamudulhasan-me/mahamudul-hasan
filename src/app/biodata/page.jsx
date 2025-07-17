@@ -1,9 +1,10 @@
+import Daisy from "@/utils/icons/Daisy";
 import Link from "next/link";
 import { GoArrowLeft } from "react-icons/go";
 import Address from "./_components/Address";
 import ContactInfo from "./_components/ContactInfo";
 import EducationalInfo from "./_components/EducationalInfo";
-import ExpectedPartnerInfo from "./_components/expectedPartnerInfo";
+import ExpectedPartnerInfo from "./_components/ExpectedPartnerInfo";
 import FamilyInfo from "./_components/FamilyInfo";
 import MarriageInfo from "./_components/MarriageInfo";
 import PersonalInfo from "./_components/PersonalInfo";
@@ -36,6 +37,13 @@ const BioData = () => {
           <MarriageInfo />
           <ExpectedPartnerInfo />
           <ContactInfo />
+          <div className="flex items-center justify-center gap-x-2">
+            <Daisy />
+            <span className="text-2xl text-slate-200">
+              আন্তরিক ধন্যবাদ{" "}
+            </span>{" "}
+            <Daisy />
+          </div>
         </aside>
       </main>
     </div>

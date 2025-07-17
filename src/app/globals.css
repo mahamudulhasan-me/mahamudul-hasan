@@ -200,3 +200,10 @@ html {
 .bio-value {
   @apply flex items-center justify-start px-4 py-2 w-1/2 text-start text-slate-300 font-thin font-bangla;
 }
+
+.bio-label2 {
+  @apply flex justify-center items-center font-medium md:w-1/2   w-full px-4 py-2 text-center text-slate-200;
+}
+.bio-value2 {
+  @apply flex items-center justify-start px-4 py-2 md:w-1/2 w-full text-start text-slate-300 font-thin font-bangla;
+}

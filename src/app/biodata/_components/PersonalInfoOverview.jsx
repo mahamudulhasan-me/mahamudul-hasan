@@ -1,4 +1,5 @@
 import SocialLink from "@/components/Nav/SocialLink";
+import Hibiscus from "@/utils/icons/Hibiscus";
 import ManIcon from "../../../utils/icons/ManIcon";
 
 const PersonalInfoOverview = () => {
@@ -42,6 +43,13 @@ const PersonalInfoOverview = () => {
       </aside>
       <div className="mb-5 md:mt-0 pt-5 flex items-center justify-center space-x-6">
         <SocialLink />
+      </div>
+      <div className="flex items-center justify-center">
+        {/* <div className="flex items-center">
+          <SmallFlowerTree />
+          <SmallFlowerTree />
+        </div> */}
+        <Hibiscus />
       </div>
     </div>
   );

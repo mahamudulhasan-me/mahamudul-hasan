@@ -1,3 +1,4 @@
+import MobileViewRow from "./MobileViewCol";
 import SectionContainer from "./SectionContainer";
 
 const Address = () => {
@@ -18,14 +19,12 @@ const Address = () => {
         </span>
       </h6>
 
-      <h6 className="bio-element">
-        <span className="bio-label">শৈশব ও বেড়ে ওঠা</span>
-        <span className="bio-value">
-          শৈশব ও স্কুলজীবন নিজ গ্রামেই কেটেছে। এসএসসি পর্যন্ত নিজ এলাকায়
+      <MobileViewRow
+        label={"শৈশব ও বেড়ে ওঠা"}
+        value="শৈশব ও স্কুলজীবন নিজ গ্রামেই কেটেছে। এসএসসি পর্যন্ত নিজ এলাকায়
           পড়াশোনা করেছি। এরপর ডিপ্লোমা ইন ইঞ্জিনিয়ারিং অধ্যয়নের জন্য চার বছর
-          বগুড়ায় ছিলাম। বর্তমানে ঢাকায় থাকছি ও কর্মরত আছি।
-        </span>
-      </h6>
+          বগুড়ায় ছিলাম। বর্তমানে ঢাকায় থাকছি ও কর্মরত আছি।"
+      />
     </SectionContainer>
   );
 };
