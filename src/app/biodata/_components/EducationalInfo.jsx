@@ -2,7 +2,7 @@ import SectionContainer from "./SectionContainer";
 const educationInfo = [
   {
     label: "Medium of Education",
-    value: "General (National Curriculum)",
+    value: "General",
   },
   {
     label: "Highest Qualification",

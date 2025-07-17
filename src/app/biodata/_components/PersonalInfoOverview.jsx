@@ -1,4 +1,6 @@
 import SocialLink from "@/components/Nav/SocialLink";
+import Hibiscus from "@/utils/icons/Hibiscus";
+import ManIcon from "../../../utils/icons/ManIcon";
 
 const PersonalInfoOverview = () => {
   const personalInfo = [
@@ -6,7 +8,7 @@ const PersonalInfoOverview = () => {
     { label: "Birth Year", value: "July, 1998" },
     { label: "Height", value: "5′ 6″" },
     { label: "Complexion", value: "Light Brown (উজ্জ্বল শ্যামলা)" },
-    { label: "Weight", value: "63 kg" },
+    { label: "Weight", value: "64 kg" },
     { label: "Blood Group", value: "O+" },
     { label: "Nationality", value: "Bangladeshi" },
   ];
@@ -14,7 +16,9 @@ const PersonalInfoOverview = () => {
   return (
     <div className="lg:col-span-4 col-span-12 h-fit lg:sticky lg:top-2">
       <aside className=" text-slate-300 group bg-navy-light p-4 rounded-md transition-all shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] drop-shadow-lg h-fit ">
-        <div className=""></div>
+        <figure className="size-28 mx-auto flex items-center justify-center rounded-full ring ring-slate-dark mb-4">
+          <ManIcon />
+        </figure>
         <h1 className="text-center text-2xl text-slate-100 font-medium">
           Mahamudul Hasan
         </h1>
@@ -39,6 +43,13 @@ const PersonalInfoOverview = () => {
       </aside>
       <div className="mb-5 md:mt-0 pt-5 flex items-center justify-center space-x-6">
         <SocialLink />
+      </div>
+      <div className="flex items-center justify-center">
+        {/* <div className="flex items-center">
+          <SmallFlowerTree />
+          <SmallFlowerTree />
+        </div> */}
+        <Hibiscus />
       </div>
     </div>
   );
