@@ -44,7 +44,7 @@ const ContactInfo = () => {
         >
           <span className="bio-label">{info.title}</span>
           <span className="bio-value gap-x-2">
-            {info.value}{" "}
+            <span className="break-all">{info.value}</span>{" "}
             <span className="cursor-pointer">
               {copiedItems[index] ? (
                 <BsClipboard2CheckFill color="#64ffda" title="Copied" />

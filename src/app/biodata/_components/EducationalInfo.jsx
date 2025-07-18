@@ -1,3 +1,4 @@
+import MobileViewRow from "./MobileViewCol";
 import SectionContainer from "./SectionContainer";
 const educationInfo = [
   {
@@ -44,11 +45,6 @@ const educationInfo = [
     label: "Diploma Passing Year",
     value: "2019",
   },
-  {
-    label: "Other Qualifications",
-    value:
-      "I attempted to pursue a Diploma in Arabic Language at the International Open University (IOU), but due to my current job and academic commitments, I couldn't continue.",
-  },
 ];
 
 const EducationalInfo = () => {
@@ -63,6 +59,19 @@ const EducationalInfo = () => {
           <span className="bio-value">{info.value}</span>
         </h6>
       ))}
+      <MobileViewRow
+        bg={"bg-navy-light/20"}
+        label="Other Qualifications"
+        value={
+          <p>
+            I completed a 4-year Diploma in Engineering before starting my BSc
+            degree. The duration of the Diploma and a 1-year delay caused by the
+            COVID-19 pandemic slightly delayed my graduation. <br />I also began
+            a Diploma in Arabic Language at the Islamic Open University (IOU),
+            but I couldn&apos;t continue due to my job and academic commitments.
+          </p>
+        }
+      />
     </SectionContainer>
   );
 };
