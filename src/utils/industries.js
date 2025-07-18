@@ -1,11 +1,41 @@
 export const industries = [
   {
+    name: "Qzency Ltd.",
+    link: "https://qzency.com/",
+    role: "Front-End Developer",
+    jobType: "Onsite",
+    start: "2025-03-01",
+    end: "Present",
+
+    address: "Mirpur DOHS, Dhaka-1216, Bangladesh.",
+    duties: [
+      "Developing a scalable SaaS platform (like Shopify or Wix) with SSO integration and a clean, modular architecture.",
+      "Collaborating with designers and backend teams to build pixel-perfect, high-performance user interfaces.",
+      " Leading front-end R&D to improve design systems, user experience, and development workflows.",
+      " Building custom, reusable components with a focus on scalability and maintainability.",
+      "Managing a large-scale codebase using modern engineering best practices.",
+    ],
+    skills: [
+      "TypeScript",
+      "Next.js",
+      "Redux",
+      "REST APIs",
+      "SSO",
+      "TailwindCSS",
+      "Framer Motion",
+      "UI/UX",
+      "Team Work",
+      "Git",
+      "Collaboration",
+    ],
+  },
+  {
     name: "Sundarban Courier Service (Pvt.) Ltd.",
     link: "https://sundarban.com.bd/",
-    role: "Frontend Developer",
+    role: "Front-End Developer",
     jobType: "Onsite",
     start: "2023-09-01",
-    end: "Present",
+    end: "2025-03-10",
 
     address: "Uttara, Dhaka-1230",
     duties: [

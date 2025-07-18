@@ -1,26 +1,27 @@
 import MobileSectionHead from "@/components/SectionHead/MobileSectionHead";
+import Link from "next/link";
 import { FcAbout } from "react-icons/fc";
 
-const skills = [
-  "TypeScript",
-  "Next.js",
-  "React",
-  "Redux",
-  "Tailwind CSS",
-  "Express.js",
-  "GraphQL",
-  "MongoDB",
-];
+// const skills = [
+//   "TypeScript",
+//   "Next.js",
+//   "React",
+//   "Redux",
+//   "Tailwind CSS",
+//   "Express.js",
+//   "GraphQL",
+//   "MongoDB",
+// ];
 
-const othersSkills = [
-  "Git",
-  "RESTful APIs",
-  "JWT",
-  "Ant Design",
-  "Radix UI",
-  "Framer Motion",
-  "PostgreSQL",
-];
+// const othersSkills = [
+//   "Git",
+//   "RESTful APIs",
+//   "JWT",
+//   "Ant Design",
+//   "Radix UI",
+//   "Framer Motion",
+//   "PostgreSQL",
+// ];
 
 const About = () => {
   return (
@@ -31,27 +32,41 @@ const About = () => {
       <MobileSectionHead icon={FcAbout} title="About" />
       <div className="px-4 md:px-0 space-y-4">
         <p>
-          Hello! I&apos;m a passionate developer who enjoys crafting seamless,
-          user-friendly web experiences. My work combines thoughtful design with
-          robust engineering to create impactful solutions. I thrive on blending
-          creativity with functionality, ensuring that every pixel and line of
-          code contributes to an intuitive digital experience.
+          I&apos;m a developer who loves creating smooth and easy-to-use
+          websites. I especially enjoy designing{" "}
+          <span className="hovered-text">Front-End Architecture</span> that
+          makes apps reliable and fast. Mixing creative ideas with solid coding,
+          I build experiences that people find simple and enjoyable to use.
+        </p>
+
+        <p>
+          Currently, I work at{" "}
+          <Link
+            href="https://qzency.com/"
+            className="hovered-text"
+            target="_blank"
+          >
+            Qzency
+          </Link>
+          , where I contribute to large-scale SaaS platforms{" "}
+          <Link
+            href="https://ecommerce.zoyeq.com/"
+            target="_blank"
+            className="hovered-text"
+          >
+            ZOYEQ
+          </Link>
+          , like Shopify, and Wix. My role includes managing complex codebases,
+          designing front-end architecture, and implementing features like SSO
+          (Single Sign-On) for better user experience and security. I focus on
+          delivering clean, scalable, and intuitive UI across multi-tenant
+          systems.
         </p>
         <p>
-          Currently, I&apos;m a{" "}
-          <span className="hovered-text">MERN stack developer</span> with a{" "}
-          strong focus on front-end development . At{" "}
-          <span className="hovered-text">Sundarban Courier Service</span>, I
-          work on building user interfaces that align with business goals while
-          delivering exceptional performance and usability.
-        </p>
-        <p>
-          Beyond professional projects, I enjoy pushing boundaries and tackling
-          challenges that encourage growth. I&apos;m constantly learning and
-          experimenting with new technologies to stay ahead in the ever-evolving
-          tech landscape. When I&apos;m not coding, I spend time writing,
-          reading, or nurturing my garden, drawing creative inspiration from the
-          beauty of nature.
+          When I’m not working, I love trying out new technologies and solving
+          challenging problems that help me grow. I also enjoy writing, reading,
+          and spending time in my garden, where I find inspiration in nature’s
+          beauty.
         </p>
       </div>
     </section>
